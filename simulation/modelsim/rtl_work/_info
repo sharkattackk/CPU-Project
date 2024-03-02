@@ -1,0 +1,213 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/camer/School/Winter24/ELEC374/CPU-Project/simulation/modelsim
+valu
+Z1 !s110 1709337587
+!i10b 1
+!s100 ALU]`cP<MBA536;^Y7LA`1
+I>mb=ImId^_E4A8;k;`U<S0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1709336631
+8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu.v
+FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1709337587.000000
+!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project
+Z7 tCvgOpt 0
+valu_and
+R1
+!i10b 1
+!s100 BmN^Di2hPZa>^<_HlPdn_1
+I;LI;DVZ6lD``Z5`PLDQb=3
+R2
+R0
+w1709336736
+8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu_and.v
+FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu_and.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu_and.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu_and.v|
+!i113 1
+R5
+R6
+R7
+vdatapath
+Z8 !s110 1709337588
+!i10b 1
+!s100 FokdZ;kaT]chY[CWAci[h3
+IjjCI^=A[=fBGJFo:C9L`41
+R2
+R0
+w1709337535
+8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v
+FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1709337588.000000
+!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v|
+!i113 1
+R5
+R6
+R7
+vdatapath_tb
+R8
+!i10b 1
+!s100 FSZ_oBGRXO9Zibm:OLM2i3
+I2XM;42H[K]jPQP9a`CCTL0
+R2
+R0
+w1709337420
+8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath_tb.v
+FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath_tb.v|
+!i113 1
+R5
+R6
+R7
+vMDRreg
+R8
+!i10b 1
+!s100 TH_WEicl2_g@caE7Dfb0h0
+IHV3H5lUD60P4eMF@7EZgA0
+R2
+R0
+w1709320537
+8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/MDR.v
+FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/MDR.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/MDR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/MDR.v|
+!i113 1
+R5
+R6
+R7
+n@m@d@rreg
+vReg32
+R8
+!i10b 1
+!s100 2mXHinMHAKZcP?WG0kE@30
+ISd@]CPhe[0o0<3URiz[:`0
+R2
+R0
+w1709313252
+8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/Reg32.v
+FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/Reg32.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/Reg32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/Reg32.v|
+!i113 1
+R5
+R6
+R7
+n@reg32
+vThirtyTwoToFiveEncoder
+R8
+!i10b 1
+!s100 497@BoAeA9Fz0iD1Nz?PU2
+InD73N;W;;`MbbikzYA_Td2
+R2
+R0
+w1709319960
+8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToFiveEncoder.v
+FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToFiveEncoder.v
+L0 4
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToFiveEncoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToFiveEncoder.v|
+!i113 1
+R5
+R6
+R7
+n@thirty@two@to@five@encoder
+vThirtyTwoToOneEncoder
+R8
+!i10b 1
+!s100 cTee3Z^:F5SEmDEz9Q1?I3
+ISSF2;aFcUL1RicT_mNB@K0
+R2
+R0
+w1709326999
+8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToOneEncoder.v
+FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToOneEncoder.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToOneEncoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToOneEncoder.v|
+!i113 1
+R5
+R6
+R7
+n@thirty@two@to@one@encoder
+vTwoToOneMux
+R1
+!i10b 1
+!s100 e6lLH1=L4BK7[e<?n16K@0
+IlDN`V2jcnj0`U<9g3o^EB2
+R2
+R0
+w1709320561
+8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/TwoToOneMux.v
+FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/TwoToOneMux.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/TwoToOneMux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/TwoToOneMux.v|
+!i113 1
+R5
+R6
+R7
+n@two@to@one@mux

@@ -1,0 +1,32 @@
+module Alu(
+  input wire 	[31:0] Rb,
+  input wire	[31:0] Ry,
+  input reg  AND,
+  output reg [63:0] C_out
+  );
+
+  //declare each opcode as the operation name for readability
+
+  parameter
+          And =5'b01010,
+
+  //declare the output wires for each operation
+  wire	[31:0] Add_out,Sub_out,Shr_out,Shra_out,Shl_out,Ror_out,Rol_out,And_out,Or_out,Neg_out,Not_out, Div_out_r, Div_out_q;
+  wire	[63:0] Mul_out;
+  wire add_overflow;
+
+  always @(*)
+    begin
+    if(AND)
+        begin
+          C_out[31:0] <= And_out;
+          C_out[63:32] <= 32'b0;
+        end
+      endcase
+    end
+
+  //instantiating each of the arithmetic subunits
+  And_32 and_32(.Ra(Ry), .Rb(Rb), .Rz(And_out));
+
+    
+endmodule 
