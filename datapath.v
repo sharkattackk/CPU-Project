@@ -18,8 +18,8 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
                     enable[2] = R2in;
                     enable[3] = R3in;
                     enable[1] = R1in;
-                    Rout[2] = R3out;
-                    Rout[1] = R2out;
+                    Rout[3] = R3out;
+                    Rout[2] = R2out;
                 end
 
                 wire [31:0] BusMuxIn_IR, BusMuxIn_Y, C_sign_extend, BusMuxIn_InPort, BusMuxIn_MDR, BusMuxIn_PC, BusMuxIn_ZLO, BusMuxIn_ZHI, BusMuxIn_LO, BusMuxIn_HI;
@@ -48,7 +48,7 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
                 Reg32 PC(.clr(clr), .clk(clk), .Rin(PCin), .d(BusMuxOut), .q(BusMuxIn_PC));
                 Reg32 Y(.clr(clr), .clk(clk), .Rin(Yin), .d(BusMuxOut), .q(BusMuxIn_Y));
                 Reg32 Z_HI(.clr(clr), .clk(clk), .Rin(ZHIin), .d(C_data_out), .q(BusMuxIn_ZHI));
-                Reg32 Z_LO(.clr(clr), .clk(clk), .Rin(ZLOin), .d(C_data_out), .q(BusMuxIn_ZLO));
+                Reg32 Z_LO(.clr(clr), .clk(clk), .Rin(Zin), .d(C_data_out), .q(BusMuxIn_ZLO));
                 Reg32 HI(.clr(clr), .clk(clk), .Rin(HIin), .d(BusMuxOut), .q(BusMuxIn_HI));
                 Reg32 LO(.clr(clr), .clk(clk), .Rin(LOin), .d(BusMuxOut), .q(BusMuxIn_LO));
 

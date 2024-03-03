@@ -144,7 +144,7 @@ always @(Present_state) // do the required job in each state
 			T5: 
 				begin
 					#0 Zlowout <= 1; R1in <= 1;
-					#10 Zlowout <= 1; R1in <= 1;
+					#10 Zlowout <= 0; R1in <= 0;
 				end
 		endcase
 	end
