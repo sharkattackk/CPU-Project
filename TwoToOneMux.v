@@ -7,7 +7,7 @@ module TwoToOneMux (
 );
  
 always @* begin
-    if (!signal) begin
+    if (signal) begin
         muxOut = muxIn_1;
     end
     else begin

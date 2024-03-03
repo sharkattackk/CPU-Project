@@ -5,6 +5,6 @@ module MDRreg (clr, clk, enable, Mdatain, BusMuxOut, Read, MDRout);
 
     wire [31:0] MDRin;
     TwoToOneMux MDMux (Mdatain, BusMuxOut, Read, MDRin);
-    Reg32 regMDR (clr, clk, enable, MDRin, MDRout);
+    Reg32 regMDR (.clr(clr), .clk(clk), .Rin(enable), .d(MDRin), .q(MDRout));
 
 endmodule

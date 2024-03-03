@@ -55,12 +55,13 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
 
                 Reg32 IR(.clr(clr), .clk(clk), .Rin(IRin), .d(BusMuxOut), .q(BusMuxIn_IR));
 
-                MDRreg MDR(.clr(clr), .clk(clk), .enable(MDRin), .Mdatain(Mdatain), .BusMuxOut(BusMuxOut), .Read(Read), .MDRout(BusMuxIn_MDR));
+                MDRreg MDR(.clr(clr), .clk(clk), .enable(MDRin), .Mdatain(MDatain), .BusMuxOut(BusMuxOut), .Read(Read), .MDRout(BusMuxIn_MDR));
 
                 wire[4:0] encoderOut;
 
-                ThirtyTwoToFiveEncoder regEncoder(.Cin({{8{1'b0}},Cout,InPortout,MDRout,PCout,Zlowout,Zhighout,LOout,HIout,Rout}), .Cout(encoderOut));
-
+                //ThirtyTwoToFiveEncoder regEncoder(.Cin({{8{1'b0}},Cout,InPortout,MDRout,PCout,Zlowout,Zhighout,LOout,HIout,Rout}), .Cout(encoderOut));
+                ThirtyTwoToFiveEncoder regEncoder(.Cin({{8{1'b0}},Cout,InPortout, MDRout, PCout,Zlowout,Zhighout,LOout,HIout,Rout}), .Cout(encoderOut));
+					 
                 ThirtyTwoToOneEncoder busMux(
                     .BusMuxIn_R0(BusMuxIn_R0),
                     .BusMuxIn_R1(BusMuxIn_R1), 
@@ -92,7 +93,7 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
 
                 alu alu_module(
                     .Rb(BusMuxOut),
-                    .Ry(BusMuxOut),
+                    .Ry(BusMuxIn_Y),
                     .AND(AND),
                     .resultLo(C_data_out)
                 );
