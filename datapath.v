@@ -30,21 +30,21 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
 
 
                 Reg32 R0(.clr(clr), .clk(clk), .Rin(enable[0]), .d(BusMuxOut), .q(busInR0));
-				Reg32 R1(.clr(clr), .clk(clk), .Rin(enable[1]), .d(BusMuxOut), .q(busInR1));
-				Reg32 R2(.clr(clr), .clk(clk), .Rin(enable[2]), .d(BusMuxOut), .q(busInR2));
-				Reg32 R3(.clr(clr), .clk(clk), .Rin(enable[3]), .d(BusMuxOut), .q(busInR3));
-				Reg32 R4(.clr(clr), .clk(clk), .Rin(enable[4]), .d(BusMuxOut), .q(busInR4));
-				Reg32 R5(.clr(clr), .clk(clk), .Rin(enable[5]), .d(BusMuxOut), .q(busInR5));
-				Reg32 R6(.clr(clr), .clk(clk), .Rin(enable[6]), .d(BusMuxOut), .q(busInR6));
-				Reg32 R7(.clr(clr), .clk(clk), .Rin(enable[7]), .d(BusMuxOut), .q(busInR7));
-				Reg32 R8(.clr(clr), .clk(clk), .Rin(enable[8]), .d(BusMuxOut), .q(busInR8));
-				Reg32 R9(.clr(clr), .clk(clk), .Rin(enable[9]), .d(BusMuxOut), .q(busInR9));
-				Reg32 R10(.clr(clr), .clk(clk), .Rin(enable[10]), .d(BusMuxOut), .q(busInR10));
-				Reg32 R11(.clr(clr), .clk(clk), .Rin(enable[11]), .d(BusMuxOut), .q(busInR11));
-				Reg32 R12(.clr(clr), .clk(clk), .Rin(enable[12]), .d(BusMuxOut), .q(busInR12));
-				Reg32 R13(.clr(clr), .clk(clk), .Rin(enable[13]), .d(BusMuxOut), .q(busInR13));
-				Reg32 R14(.clr(clr), .clk(clk), .Rin(enable[14]), .d(BusMuxOut), .q(busInR14));
-				Reg32 R15(.clr(clr), .clk(clk), .Rin(enable[15]), .d(BusMuxOut), .q(busInR15));
+				Reg32 R1(.clr(clr), .clk(clk), .Rin(R1in), .d(BusMuxOut), .q(busInR1));
+				Reg32 R2(.clr(clr), .clk(clk), .Rin(R2in), .d(BusMuxOut), .q(busInR2));
+				Reg32 R3(.clr(clr), .clk(clk), .Rin(R3in), .d(BusMuxOut), .q(busInR3));
+				Reg32 R4(.clr(clr), .clk(clk), .Rin(R4in), .d(BusMuxOut), .q(busInR4));
+				Reg32 R5(.clr(clr), .clk(clk), .Rin(R5in), .d(BusMuxOut), .q(busInR5));
+				Reg32 R6(.clr(clr), .clk(clk), .Rin(R6in), .d(BusMuxOut), .q(busInR6));
+				Reg32 R7(.clr(clr), .clk(clk), .Rin(R7in), .d(BusMuxOut), .q(busInR7));
+				Reg32 R8(.clr(clr), .clk(clk), .Rin(R8in), .d(BusMuxOut), .q(busInR8));
+				Reg32 R9(.clr(clr), .clk(clk), .Rin(R9in), .d(BusMuxOut), .q(busInR9));
+				Reg32 R10(.clr(clr), .clk(clk), .Rin(R10in), .d(BusMuxOut), .q(busInR10));
+				Reg32 R11(.clr(clr), .clk(clk), .Rin(R11in), .d(BusMuxOut), .q(busInR11));
+				Reg32 R12(.clr(clr), .clk(clk), .Rin(R12in), .d(BusMuxOut), .q(busInR12));
+				Reg32 R13(.clr(clr), .clk(clk), .Rin(R13in), .d(BusMuxOut), .q(busInR13));
+				Reg32 R14(.clr(clr), .clk(clk), .Rin(R14in), .d(BusMuxOut), .q(busInR14));
+				Reg32 R15(.clr(clr), .clk(clk), .Rin(R15in), .d(BusMuxOut), .q(busInR15));
 
                 Reg32 PC(.clr(clr), .clk(clk), .Rin(PCin), .d(BusMuxOut), .q(BusMuxIn_PC));
                 Reg32 Y(.clr(clr), .clk(clk), .Rin(Yin), .d(BusMuxOut), .q(BusMuxIn_Y));
