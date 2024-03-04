@@ -1,6 +1,6 @@
 // and datapath_tb.v file: <This is the filename>
 `timescale 1ns/10ps
-module datapath_tb;
+module not_tb;
     reg clk;
     reg clr;
     reg R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in, R10in, R11in, R12in, R13in, R14in, R15in;
@@ -9,7 +9,7 @@ module datapath_tb;
     reg HIin, LOin, InPortout, Cout;
     reg Zin, PCin, IRin, Yin;
 	reg PCout, Zlowout, Zhighout, MDRout, R2out, R3out, LOout, HIout; // add any other signals to see in your simulation
-	reg IncPC, AND;
+	reg IncPC, AND, OR, NEG, NOT;
 	reg [31:0] Mdatain;
 	
 parameter Default = 4'b0000, 
@@ -30,7 +30,7 @@ reg [3:0] Present_state = Default;
 
 
 datapath DUT(.PCout(PCout), .Zlowout(Zlowout), .Zhighout(Zhighout), .MDRout(MDRout), .R2out(R2out), .R3out(R3out), .MARin(MARin), .Zin(Zin), .PCin(PCin), .Cout(Cout), .InPortout(InPortout),
-              .MDRin(MDRin), .IRin(IRin), .Yin(Yin), .IncPC(IncPC), .LOout(LOout), .HIout(HIout), .Read(Read), .AND(AND), .R1in(R1in), .R2in(R2in), .R3in(R3in), .clk(clk), .MDatain(Mdatain));
+              .MDRin(MDRin), .IRin(IRin), .Yin(Yin), .IncPC(IncPC), .LOout(LOout), .HIout(HIout), .Read(Read), .AND(AND), .OR(OR), .NEG(NEG), .NOT(NOT), .R1in(R1in), .R2in(R2in), .R3in(R3in), .clk(clk), .MDatain(Mdatain));
 
 
 // add test logic here
@@ -77,7 +77,7 @@ always @(Present_state) // do the required job in each state
 					PCout <= 0; Zlowout <= 0; Zhighout <= 0; MDRout <= 0; // initialize the signals
 					R2out <= 0; R3out <= 0; MARin <= 0; Zin <= 0;
 					PCin <=0; MDRin <= 0; IRin <= 0; Yin <= 0;
-					IncPC <= 0; Read <= 0; AND <= 0;
+					IncPC <= 0; Read <= 0; AND <= 0; OR <= 0; NEG<=0; NOT <= 0;
 					HIout <= 0; LOout <= 0;
 					Cout <= 0; InPortout <=0; 
 					R1in <= 0; R2in <= 0; R3in <= 0; Mdatain <= 32'h00000000;
@@ -138,13 +138,13 @@ always @(Present_state) // do the required job in each state
 				end
 			T4: 
 				begin
-					#0 R3out <= 1; AND <= 1; Zin <= 1;
-					#10 R3out <= 0; AND <= 0; Zin <= 0;
+					#0 R3out <= 1; NOT <= 1; Zin <= 1;
+					#10 R3out <= 0; NOT <= 0; Zin <= 0;
 				end
 			T5: 
 				begin
 					#0 Zlowout <= 1; R1in <= 1;
-					#10 Zlowout <= 1; R1in <= 1;
+					#10 Zlowout <= 0; R1in <= 0;
 				end
 		endcase
 	end
