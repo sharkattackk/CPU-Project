@@ -1,1 +1,10 @@
-Warning (10268): Verilog HDL information at datapath_tb.v(72): always construct contains both blocking and non-blocking assignments File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath_tb.v Line: 72
+Warning (10268): Verilog HDL information at not_tb.v(72): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/not_tb.v Line: 72
+Warning (10268): Verilog HDL information at neg_tb.v(72): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/neg_tb.v Line: 72
+Warning (10268): Verilog HDL information at or_tb.v(72): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/or_tb.v Line: 72
+Warning (10268): Verilog HDL information at and_tb.v(72): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/and_tb.v Line: 72
+Warning (10268): Verilog HDL information at alu.v(28): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Warning (10268): Verilog HDL information at mul_tb.v(75): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/mul_tb.v Line: 75
+Warning (10268): Verilog HDL information at rol_tb.v(72): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/rol_tb.v Line: 72
+Warning (10268): Verilog HDL information at ror_tb.v(72): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ror_tb.v Line: 72
+Info (10281): Verilog HDL Declaration information at alu_div.v(4): object "a" differs only in case from object "A" in the same scope File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_div.v Line: 4
+Warning (10268): Verilog HDL information at div_tb.v(75): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/div_tb.v Line: 75

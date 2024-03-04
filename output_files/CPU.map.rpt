@@ -1,26 +1,29 @@
-Analysis & Synthesis report for CPU
-Fri Mar 01 19:05:20 2024
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Analysis & Elaboration report for CPU
+Mon Mar 04 02:08:02 2024
+Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Messages
-  6. Analysis & Synthesis Suppressed Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Port Connectivity Checks: "alu:alu_module"
+  6. Port Connectivity Checks: "ThirtyTwoToFiveEncoder:regEncoder"
+  7. Port Connectivity Checks: "Reg32:IR"
+  8. Analysis & Elaboration Messages
+  9. Analysis & Elaboration Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -30,30 +33,47 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Fri Mar 01 19:05:20 2024           ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; CPU                                         ;
-; Top-level Entity Name       ; datapath                                    ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Mon Mar 04 02:08:02 2024       ;
+; Quartus Prime Version         ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
+; Revision Name                 ; CPU                                         ;
+; Top-level Entity Name         ; datapath                                    ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -139,86 +159,231 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 20          ;
-; Maximum allowed            ; 12          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_module"                                                                                                                             ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; clk  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "ThirtyTwoToFiveEncoder:regEncoder" ;
++-------------+-------+----------+------------------------------+
+; Port        ; Type  ; Severity ; Details                      ;
++-------------+-------+----------+------------------------------+
+; Cin[31..24] ; Input ; Info     ; Stuck at GND                 ;
++-------------+-------+----------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Reg32:IR"                                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Mar 01 19:05:14 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
+    Info: Processing started: Mon Mar 04 02:07:45 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file alu_and.v
-    Info (12023): Found entity 1: alu_and File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu_and.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: alu File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file twotoonemux.v
-    Info (12023): Found entity 1: TwoToOneMux File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/TwoToOneMux.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file thirtytwotooneencoder.v
-    Info (12023): Found entity 1: ThirtyTwoToOneEncoder File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToOneEncoder.v Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file thirtytwotofiveencoder.v
-    Info (12023): Found entity 1: ThirtyTwoToFiveEncoder File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToFiveEncoder.v Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file reg32.v
-    Info (12023): Found entity 1: Reg32 File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/Reg32.v Line: 1
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file not_tb.v
+    Info (12023): Found entity 1: not_tb File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/not_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file neg_tb.v
+    Info (12023): Found entity 1: neg_tb File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/neg_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file alu_not.v
+    Info (12023): Found entity 1: alu_not File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_not.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_neg.v
+    Info (12023): Found entity 1: alu_neg File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_neg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or_tb.v
+    Info (12023): Found entity 1: or_tb File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/or_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file mdr_reg.v
-    Info (12023): Found entity 1: MDR_Reg File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/MDR_Reg.v Line: 1
+    Info (12023): Found entity 1: MDR_Reg File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/MDR_Reg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file and_tb.v
+    Info (12023): Found entity 1: and_tb File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/and_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file alu_or.v
+    Info (12023): Found entity 1: alu_or File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_or.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_and.v
+    Info (12023): Found entity 1: alu_and File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_and.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: alu File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file twotoonemux.v
+    Info (12023): Found entity 1: TwoToOneMux File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/TwoToOneMux.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file thirtytwotooneencoder.v
+    Info (12023): Found entity 1: ThirtyTwoToOneEncoder File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToOneEncoder.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file thirtytwotofiveencoder.v
+    Info (12023): Found entity 1: ThirtyTwoToFiveEncoder File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToFiveEncoder.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file reg32.v
+    Info (12023): Found entity 1: Reg32 File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mdr.v
-    Info (12023): Found entity 1: MDRreg File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/MDR.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file datapath_tb.v
-    Info (12023): Found entity 1: datapath_tb File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath_tb.v Line: 3
+    Info (12023): Found entity 1: MDRreg File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/MDR.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
-    Info (12023): Found entity 1: datapath File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(32): created implicit net for "busInR0" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 32
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(33): created implicit net for "busInR1" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 33
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(34): created implicit net for "busInR2" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 34
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(35): created implicit net for "busInR3" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 35
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(36): created implicit net for "busInR4" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 36
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(37): created implicit net for "busInR5" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 37
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(38): created implicit net for "busInR6" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 38
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(39): created implicit net for "busInR7" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 39
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(40): created implicit net for "busInR8" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 40
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(41): created implicit net for "busInR9" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 41
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(42): created implicit net for "busInR10" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 42
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(43): created implicit net for "busInR11" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 43
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(44): created implicit net for "busInR12" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 44
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(45): created implicit net for "busInR13" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 45
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(46): created implicit net for "busInR14" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 46
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(47): created implicit net for "busInR15" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 47
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(51): created implicit net for "ZHIin" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 51
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(52): created implicit net for "ZLOin" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 52
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(58): created implicit net for "Mdatain" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 58
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(62): created implicit net for "Cout" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 62
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(62): created implicit net for "InPortout" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 62
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(62): created implicit net for "ZHighout" File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v Line: 62
-Error (10161): Verilog HDL error at alu.v(17): object "St1" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu.v Line: 17
-Info (144001): Generated suppressed messages file C:/Users/camer/School/Winter24/ELEC374/CPU-Project/output_files/CPU.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 23 warnings
-    Error: Peak virtual memory: 4773 megabytes
-    Error: Processing ended: Fri Mar 01 19:05:20 2024
-    Error: Elapsed time: 00:00:06
-    Error: Total CPU time (on all processors): 00:00:02
+    Info (12023): Found entity 1: datapath File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_mul.v
+    Info (12023): Found entity 1: alu_mul File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_mul.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mul_tb.v
+    Info (12023): Found entity 1: mul_tb File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/mul_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file alu_rol.v
+    Info (12023): Found entity 1: alu_rol File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_rol.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rol_tb.v
+    Info (12023): Found entity 1: rol_tb File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/rol_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file alu_ror.v
+    Info (12023): Found entity 1: alu_ror File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_ror.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ror_tb.v
+    Info (12023): Found entity 1: ror_tb File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ror_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file alu_div.v
+    Info (12023): Found entity 1: alu_div File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_div.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file div_tb.v
+    Info (12023): Found entity 1: div_tb File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/div_tb.v Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at alu.v(15): created implicit net for "di_result" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at datapath.v(51): created implicit net for "ZHIin" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v Line: 51
+Info (12127): Elaborating entity "datapath" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(9): object "enable" assigned a value but never read File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v Line: 9
+Info (12128): Elaborating entity "Reg32" for hierarchy "Reg32:R0" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v Line: 32
+Warning (10240): Verilog HDL Always Construct warning at Reg32.v(4): inferring latch(es) for variable "q", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[0]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[1]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[2]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[3]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[4]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[5]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[6]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[7]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[8]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[9]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[10]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[11]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[12]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[13]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[14]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[15]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[16]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[17]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[18]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[19]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[20]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[21]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[22]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[23]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[24]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[25]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[26]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[27]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[28]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[29]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[30]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (10041): Inferred latch for "q[31]" at Reg32.v(4) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v Line: 4
+Info (12128): Elaborating entity "MDRreg" for hierarchy "MDRreg:MDR" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v Line: 58
+Info (12128): Elaborating entity "TwoToOneMux" for hierarchy "MDRreg:MDR|TwoToOneMux:MDMux" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/MDR.v Line: 7
+Info (12128): Elaborating entity "ThirtyTwoToFiveEncoder" for hierarchy "ThirtyTwoToFiveEncoder:regEncoder" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v Line: 63
+Warning (10762): Verilog HDL Case Statement warning at ThirtyTwoToFiveEncoder.v(10): can't check case statement for completeness because the case expression has too many possible states File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToFiveEncoder.v Line: 10
+Info (10264): Verilog HDL Case Statement information at ThirtyTwoToFiveEncoder.v(10): all case item expressions in this case statement are onehot File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToFiveEncoder.v Line: 10
+Info (12128): Elaborating entity "ThirtyTwoToOneEncoder" for hierarchy "ThirtyTwoToOneEncoder:busMux" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v Line: 92
+Info (12128): Elaborating entity "alu" for hierarchy "alu:alu_module" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v Line: 107
+Warning (10036): Verilog HDL or VHDL warning at alu.v(15): object "di_result" assigned a value but never read File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 15
+Warning (10230): Verilog HDL assignment warning at alu.v(15): truncated value with size 64 to match size of target (1) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 15
+Warning (10240): Verilog HDL Always Construct warning at alu.v(28): inferring latch(es) for variable "resultLo", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Warning (10240): Verilog HDL Always Construct warning at alu.v(28): inferring latch(es) for variable "resultHi", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[0]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[1]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[2]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[3]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[4]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[5]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[6]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[7]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[8]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[9]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[10]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[11]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[12]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[13]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[14]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[15]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[16]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[17]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[18]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[19]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[20]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[21]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[22]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[23]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[24]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[25]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[26]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[27]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[28]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[29]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[30]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultHi[31]" at alu.v(28) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 28
+Info (10041): Inferred latch for "resultLo[0]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[1]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[2]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[3]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[4]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[5]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[6]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[7]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[8]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[9]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[10]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[11]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[12]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[13]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[14]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[15]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[16]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[17]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[18]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[19]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[20]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[21]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[22]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[23]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[24]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[25]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[26]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[27]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[28]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[29]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[30]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (10041): Inferred latch for "resultLo[31]" at alu.v(32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 32
+Info (12128): Elaborating entity "alu_and" for hierarchy "alu:alu_module|alu_and:and_module" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 16
+Info (12128): Elaborating entity "alu_or" for hierarchy "alu:alu_module|alu_or:or_module" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 17
+Info (12128): Elaborating entity "alu_neg" for hierarchy "alu:alu_module|alu_neg:neg_module" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 18
+Info (12128): Elaborating entity "alu_not" for hierarchy "alu:alu_module|alu_not:not_module" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 19
+Info (12128): Elaborating entity "alu_mul" for hierarchy "alu:alu_module|alu_mul:mul_module" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 20
+Warning (10199): Verilog HDL Case Statement warning at alu_mul.v(27): case item expression never matches the case expression File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_mul.v Line: 27
+Warning (10199): Verilog HDL Case Statement warning at alu_mul.v(28): case item expression never matches the case expression File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_mul.v Line: 28
+Warning (10199): Verilog HDL Case Statement warning at alu_mul.v(30): case item expression never matches the case expression File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_mul.v Line: 30
+Warning (10230): Verilog HDL assignment warning at alu_mul.v(37): truncated value with size 66 to match size of target (64) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_mul.v Line: 37
+Info (12128): Elaborating entity "alu_rol" for hierarchy "alu:alu_module|alu_rol:rol_module" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 21
+Warning (10230): Verilog HDL assignment warning at alu_rol.v(7): truncated value with size 32 to match size of target (5) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_rol.v Line: 7
+Info (12128): Elaborating entity "alu_ror" for hierarchy "alu:alu_module|alu_ror:ror_module" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 22
+Warning (10230): Verilog HDL assignment warning at alu_ror.v(7): truncated value with size 32 to match size of target (5) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_ror.v Line: 7
+Info (12128): Elaborating entity "alu_div" for hierarchy "alu:alu_module|alu_div:div_module" File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v Line: 23
+Warning (10230): Verilog HDL assignment warning at alu_div.v(20): truncated value with size 33 to match size of target (32) File: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_div.v Line: 20
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (144001): Generated suppressed messages file C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/output_files/CPU.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4779 megabytes
+    Info: Processing ended: Mon Mar 04 02:08:02 2024
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:12
 
 
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/camer/School/Winter24/ELEC374/CPU-Project/output_files/CPU.map.smsg.
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/output_files/CPU.map.smsg.
 
 

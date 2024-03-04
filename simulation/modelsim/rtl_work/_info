@@ -7,182 +7,336 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/camer/School/Winter24/ELEC374/CPU-Project/simulation/modelsim
+Z0 dC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/simulation/modelsim
 valu
-Z1 !s110 1709337587
+Z1 !s110 1709536095
 !i10b 1
-!s100 ALU]`cP<MBA536;^Y7LA`1
-I>mb=ImId^_E4A8;k;`U<S0
+!s100 >TaJR?R95K^cfkz6DQCm^1
+IP2hj3n0C?LYdjhSP[NBjP0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1709336631
-8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu.v
-FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu.v
+w1709535600
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1709337587.000000
-!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu.v|
+Z4 !s108 1709536095.000000
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v|
 !i113 1
 Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work +incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project
+Z6 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project
 Z7 tCvgOpt 0
 valu_and
 R1
 !i10b 1
 !s100 BmN^Di2hPZa>^<_HlPdn_1
-I;LI;DVZ6lD``Z5`PLDQb=3
+IVOVV`T=VQD87B9>JOU:ZA3
 R2
 R0
-w1709336736
-8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu_and.v
-FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu_and.v
+Z8 w1709491704
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_and.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_and.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu_and.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/alu_and.v|
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_and.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_and.v|
 !i113 1
 R5
 R6
 R7
-vdatapath
-Z8 !s110 1709337588
+valu_div
+Z9 !s110 1709536097
 !i10b 1
-!s100 FokdZ;kaT]chY[CWAci[h3
-IjjCI^=A[=fBGJFo:C9L`41
+!s100 =Jn9WPQL;2c]CbE9n2mh^3
+IXbW2B`LFK98FTO]<^<<O41
 R2
 R0
-w1709337535
-8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v
-FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v
-L0 1
-R3
-r1
-!s85 0
-31
-Z9 !s108 1709337588.000000
-!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath.v|
-!i113 1
-R5
-R6
-R7
-vdatapath_tb
-R8
-!i10b 1
-!s100 FSZ_oBGRXO9Zibm:OLM2i3
-I2XM;42H[K]jPQP9a`CCTL0
-R2
-R0
-w1709337420
-8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath_tb.v
-FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath_tb.v
+w1709536062
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_div.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_div.v
 L0 3
 R3
 r1
 !s85 0
 31
-R9
-!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/datapath_tb.v|
+Z10 !s108 1709536097.000000
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_div.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_div.v|
 !i113 1
 R5
 R6
 R7
-vMDRreg
-R8
+valu_mul
+Z11 !s110 1709536096
 !i10b 1
-!s100 TH_WEicl2_g@caE7Dfb0h0
-IHV3H5lUD60P4eMF@7EZgA0
+!s100 DOc4kfmf45gaLl:>XzddY2
+I7NTNfnWSzFQBE8a>o:NZ10
 R2
 R0
-w1709320537
-8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/MDR.v
-FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/MDR.v
+w1709532001
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_mul.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_mul.v
 L0 1
 R3
 r1
 !s85 0
 31
+Z12 !s108 1709536096.000000
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_mul.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_mul.v|
+!i113 1
+R5
+R6
+R7
+valu_neg
+R1
+!i10b 1
+!s100 <QnkZ_Ej2Bn0iOm`mQZSK1
+IDPoJnJ<BA;C5[H31I_zf]0
+R2
+R0
+Z13 w1709516577
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_neg.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_neg.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_neg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_neg.v|
+!i113 1
+R5
+R6
+R7
+valu_not
+R1
+!i10b 1
+!s100 XG0:M^jTozo6Y^nBQNEWU3
+ILW_1K^bgla>4nLK^omW;E1
+R2
+R0
+R13
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_not.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_not.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_not.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_not.v|
+!i113 1
+R5
+R6
+R7
+valu_or
+R1
+!i10b 1
+!s100 ;0aT@XM4OBgbjM7o]2<Ta3
+I>_]z`gTaEm?KD6YSgBgDn3
+R2
+R0
+R13
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_or.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_or.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_or.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_or.v|
+!i113 1
+R5
+R6
+R7
+valu_rol
 R9
-!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/MDR.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/MDR.v|
+!i10b 1
+!s100 ;MMAiFBPX97hITije4HWg2
+Icdg6h6oWK[Cj@<T9oYc_B2
+R2
+R0
+w1709532825
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_rol.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_rol.v
+L0 1
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_rol.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_rol.v|
+!i113 1
+R5
+R6
+R7
+valu_ror
+R9
+!i10b 1
+!s100 YDLOoR;3mW?en0DnXFX7N0
+IVl4f_<SPORMoM7IN?RHCl3
+R2
+R0
+w1709533627
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_ror.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_ror.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_ror.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_ror.v|
+!i113 1
+R5
+R6
+R7
+vdatapath
+R11
+!i10b 1
+!s100 =IgWH`DI6je<f@RH]j6L73
+IMa0BXB2_2PAHGmZZS?Izh1
+R2
+R0
+w1709535472
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v
+L0 1
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v|
+!i113 1
+R5
+R6
+R7
+vdiv_tb
+R9
+!i10b 1
+!s100 bk[S8^[o2FDVQTddSK2YZ0
+IAY@TH5z=;lLBR?n:>fB362
+R2
+R0
+w1709535514
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/div_tb.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/div_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/div_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/div_tb.v|
+!i113 1
+R5
+R6
+R7
+vMDRreg
+R11
+!i10b 1
+!s100 3kH3aXPGJ_1WhkRzWM1R`3
+I4IASJWCQN5AC0XbmM7:jJ3
+R2
+R0
+R8
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/MDR.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/MDR.v
+L0 1
+R3
+r1
+!s85 0
+31
+R12
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/MDR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/MDR.v|
 !i113 1
 R5
 R6
 R7
 n@m@d@rreg
 vReg32
-R8
+R11
 !i10b 1
-!s100 2mXHinMHAKZcP?WG0kE@30
-ISd@]CPhe[0o0<3URiz[:`0
+!s100 304hgWCeI9KF02Q7h1hNm2
+I?@nXefm1:1fE=HSAfIM9_1
 R2
 R0
-w1709313252
-8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/Reg32.v
-FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/Reg32.v
+w1709492389
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v
 L0 1
 R3
 r1
 !s85 0
 31
-R9
-!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/Reg32.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/Reg32.v|
+R12
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v|
 !i113 1
 R5
 R6
 R7
 n@reg32
 vThirtyTwoToFiveEncoder
-R8
+R11
 !i10b 1
 !s100 497@BoAeA9Fz0iD1Nz?PU2
-InD73N;W;;`MbbikzYA_Td2
+IY8C:Y`e6E2=XG2iPVAQ1D0
 R2
 R0
-w1709319960
-8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToFiveEncoder.v
-FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToFiveEncoder.v
+R8
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToFiveEncoder.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToFiveEncoder.v
 L0 4
 R3
 r1
 !s85 0
 31
-R9
-!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToFiveEncoder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToFiveEncoder.v|
+R12
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToFiveEncoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToFiveEncoder.v|
 !i113 1
 R5
 R6
 R7
 n@thirty@two@to@five@encoder
 vThirtyTwoToOneEncoder
-R8
+R11
 !i10b 1
 !s100 cTee3Z^:F5SEmDEz9Q1?I3
-ISSF2;aFcUL1RicT_mNB@K0
+IQ=Gn<FS_>1eVfLczinF9e2
 R2
 R0
-w1709326999
-8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToOneEncoder.v
-FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToOneEncoder.v
+R8
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToOneEncoder.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToOneEncoder.v
 L0 4
 R3
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToOneEncoder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/ThirtyTwoToOneEncoder.v|
+R12
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToOneEncoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToOneEncoder.v|
 !i113 1
 R5
 R6
@@ -191,21 +345,21 @@ n@thirty@two@to@one@encoder
 vTwoToOneMux
 R1
 !i10b 1
-!s100 e6lLH1=L4BK7[e<?n16K@0
-IlDN`V2jcnj0`U<9g3o^EB2
+!s100 iLPiPE>Nhi2KGSWMIzPZD2
+IkhJTM:EE8000HF5Cz;i@f2
 R2
 R0
-w1709320561
-8C:/Users/camer/School/Winter24/ELEC374/CPU-Project/TwoToOneMux.v
-FC:/Users/camer/School/Winter24/ELEC374/CPU-Project/TwoToOneMux.v
+R8
+8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/TwoToOneMux.v
+FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/TwoToOneMux.v
 L0 2
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/camer/School/Winter24/ELEC374/CPU-Project/TwoToOneMux.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/camer/School/Winter24/ELEC374/CPU-Project|C:/Users/camer/School/Winter24/ELEC374/CPU-Project/TwoToOneMux.v|
+!s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/TwoToOneMux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/TwoToOneMux.v|
 !i113 1
 R5
 R6

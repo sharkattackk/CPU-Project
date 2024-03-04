@@ -1,5 +1,5 @@
-Fitter Status : Successful - Fri Mar 01 18:59:27 2024
-Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Fitter Status : Successful - Sun Mar 03 21:20:35 2024
+Quartus Prime Version : 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 Revision Name : CPU
 Top-level Entity Name : datapath
 Family : Cyclone V
@@ -7,7 +7,7 @@ Device : 5CGXFC7C7F23C8
 Timing Models : Final
 Logic utilization (in ALMs) : 1 / 56,480 ( < 1 % )
 Total registers : 0
-Total pins : 83 / 268 ( 31 % )
+Total pins : 88 / 268 ( 33 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 7,024,640 ( 0 % )
 Total RAM Blocks : 0 / 686 ( 0 % )

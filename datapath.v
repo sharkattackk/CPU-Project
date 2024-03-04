@@ -1,7 +1,7 @@
 module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in, R10in, R11in, R12in, R13in, R14in, R15in,
 				 input R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out,
 				 input wire PCin, PCout, IRin, Yin, Zin, MARin, MDRin, MDRout, HIin, HIout, LOin, LOout, IncPC, Zhighout, Zlowout, Read, 
-				 input AND, OR, NEG, NOT, InPortout, Cout, 
+				 input AND, OR, NEG, NOT, MUL, DIV, ROL, ROR, InPortout, Cout,
 				 input [31:0] MDatain,
 				 input wire clk, clr
                );
@@ -25,6 +25,7 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
                 wire [31:0] BusMuxIn_IR, BusMuxIn_Y, C_sign_extend, BusMuxIn_InPort, BusMuxIn_MDR, BusMuxIn_PC, BusMuxIn_ZLO, BusMuxIn_ZHI, BusMuxIn_LO, BusMuxIn_HI;
                 wire [31:0] BusMuxIn_R15, BusMuxIn_R14, BusMuxIn_R13, BusMuxIn_R12, BusMuxIn_R11, BusMuxIn_R10, BusMuxIn_R9, BusMuxIn_R8, BusMuxIn_R7, BusMuxIn_R6, BusMuxIn_R5, BusMuxIn_R4, BusMuxIn_R3, BusMuxIn_R2, BusMuxIn_R1, BusMuxIn_R0;					 wire [31:0] bus_signal;
                 wire [31:0] C_data_out;
+					 wire [31:0] C_data_out_Hi;
                 wire [31:0] BusMuxOut;
 
 
@@ -47,7 +48,7 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
 
                 Reg32 PC(.clr(clr), .clk(clk), .Rin(PCin), .d(BusMuxOut), .q(BusMuxIn_PC));
                 Reg32 Y(.clr(clr), .clk(clk), .Rin(Yin), .d(BusMuxOut), .q(BusMuxIn_Y));
-                Reg32 Z_HI(.clr(clr), .clk(clk), .Rin(ZHIin), .d(C_data_out), .q(BusMuxIn_ZHI));
+                Reg32 Z_HI(.clr(clr), .clk(clk), .Rin(ZHIin), .d(C_data_out_Hi), .q(BusMuxIn_ZHI));
                 Reg32 Z_LO(.clr(clr), .clk(clk), .Rin(Zin), .d(C_data_out), .q(BusMuxIn_ZLO));
                 Reg32 HI(.clr(clr), .clk(clk), .Rin(HIin), .d(BusMuxOut), .q(BusMuxIn_HI));
                 Reg32 LO(.clr(clr), .clk(clk), .Rin(LOin), .d(BusMuxOut), .q(BusMuxIn_LO));
@@ -97,7 +98,12 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
 						  .OR(OR),
                     .NOT(NOT),
                     .NEG(NEG),
-                    .resultLo(C_data_out)
+						  .MUL(MUL),
+						  .DIV(DIV),
+						  .ROL(ROL),
+						  .ROR(ROR),
+                    .resultLo(C_data_out),
+						  .resultHi(C_data_out_Hi)
                 );
 
 
