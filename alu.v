@@ -1,17 +1,18 @@
 module alu(
   input wire 	[31:0] Rb,
   input wire	[31:0] Ry,
-  input AND, OR, NEG,
+  input AND, OR, NEG, NOT,
   output reg [31:0] resultLo
   );
 
   //declare each opcode as the operation name for readability
 
   //declare the output wires for each operation
-  wire	[31:0] and_result, or_result, neg_result;
+  wire	[31:0] and_result, or_result, neg_result, not_result;
   alu_and and_module(Rb, Ry, and_result);
   alu_or or_module(Rb, Ry, or_result);
   alu_neg neg_module(Rb, Ry, neg_result);
+  alu_not not_module(Rb, Ry, not_result);
 
 
 
@@ -27,6 +28,10 @@ module alu(
     else if(NEG)
         begin
             resultLo = neg_result;
+        end
+    else if(NOT)
+        begin  
+            resultLo = not_result;
         end
     end
 
