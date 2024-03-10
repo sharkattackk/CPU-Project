@@ -1,7 +1,7 @@
 module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in, R10in, R11in, R12in, R13in, R14in, R15in,
 				 input R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out,
 				 input wire PCin, PCout, IRin, Yin, Zin, ZHIin, MARin, MDRin, MDRout, HIin, HIout, LOin, LOout, IncPC, Zhighout, Zlowout, Read, 
-				 input AND, OR, NEG, NOT, SUB, ADD, MUL, ROR, DIV, SHL, SHR, InPortout, Cout, 
+				 input AND, OR, NEG, NOT, SUB, ADD, MUL, ROR, DIV, SHL, SHR, SHRA, ROL, InPortout, Cout, 
 				 input [31:0] MDatain,
 				 input wire clk, clr
                );
@@ -18,6 +18,9 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
                     enable[2] = R2in;
                     enable[3] = R3in;
                     enable[1] = R1in;
+						  Rout[7] = R7out;
+						  Rout[5] = R5out;
+						  Rout[4] = R4out;
                     Rout[3] = R3out;
                     Rout[2] = R2out;
                 end
@@ -48,7 +51,7 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
 
                 Reg32 PC(.clr(clr), .clk(clk), .Rin(PCin), .d(BusMuxOut), .q(BusMuxIn_PC));
                 Reg32 Y(.clr(clr), .clk(clk), .Rin(Yin), .d(BusMuxOut), .q(BusMuxIn_Y));
-                Reg32 Z_HI(.clr(clr), .clk(clk), .Rin(ZHIin), .d(C_data_out_hi), .q(BusMuxIn_ZHI));
+                Reg32 Z_HI(.clr(clr), .clk(clk), .Rin(Zin), .d(C_data_out_hi), .q(BusMuxIn_ZHI));
                 Reg32 Z_LO(.clr(clr), .clk(clk), .Rin(Zin), .d(C_data_out), .q(BusMuxIn_ZLO));
                 Reg32 HI(.clr(clr), .clk(clk), .Rin(HIin), .d(BusMuxOut), .q(BusMuxIn_HI));
                 Reg32 LO(.clr(clr), .clk(clk), .Rin(LOin), .d(BusMuxOut), .q(BusMuxIn_LO));
@@ -59,8 +62,7 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
 
                 wire[4:0] encoderOut;
 
-                //ThirtyTwoToFiveEncoder regEncoder(.Cin({{8{1'b0}},Cout,InPortout,MDRout,PCout,Zlowout,Zhighout,LOout,HIout,Rout}), .Cout(encoderOut));
-                ThirtyTwoToFiveEncoder regEncoder(.Cin({{8{1'b0}},Cout,InPortout, MDRout, PCout,Zlowout,Zhighout,LOout,HIout,Rout}), .Cout(encoderOut));
+                ThirtyTwoToFiveEncoder regEncoder(.Cin({{8{1'b0}},Cout,InPortout, MDRout, PCout, Zlowout,Zhighout,LOout,HIout,Rout}), .Cout(encoderOut));
 					 
                 ThirtyTwoToOneEncoder busMux(
                     .BusMuxIn_R0(BusMuxIn_R0),
@@ -102,10 +104,13 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
 						  .ADD(ADD),
 						  .MUL(MUL),
 						  .ROR(ROR),
+						  .ROL(ROL),
 						  .DIV(DIV),
 						  .SHL(SHL),
 						  .SHR(SHR),
-                    .resultLo(C_data_out)
+						  .SHRA(SHRA),
+                    .resultLo(C_data_out),
+						  .resultHi(C_data_out_hi)
                 );
 
 

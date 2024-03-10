@@ -1,15 +1,15 @@
 module alu(
   input wire 	[31:0] Rb,
   input wire	[31:0] Ry,
-  input AND, OR, NEG, NOT, SUB, ADD, MUL, ROR, DIV, SHR, SHL,
+  input AND, OR, NEG, NOT, SUB, ADD, MUL, ROR, ROL, DIV, SHR, SHL, SHRA,
   output reg [31:0] resultLo, resultHi
   );
 
   //declare each opcode as the operation name for readability
 
   //declare the output wires for each operation
-  wire	[31:0] and_result, or_result, neg_result, not_result, sub_result, add_result, ror_result, shr_result, shl_result;
-  wire [63:0] mul_result, div_result;
+  wire	[31:0] and_result, or_result, neg_result, not_result, sub_result, add_result, ror_result, rol_result, shr_result, shl_result, shra_result, div_quotient, div_remainder;
+  wire [63:0] mul_result;
   wire [32:0] carryOut;
   
   alu_and and_module(Rb, Ry, and_result);
@@ -19,10 +19,12 @@ module alu(
   alu_sub sub_module(sub_result, carryOut, Ry, Rb);
   alu_add add_module(add_result, carryOut, Ry, Rb);
   alu_mul mul_module(Rb, Ry, mul_result);
-  alu_ror ror_module(Rb, Ry, ror_result);
-  alu_div div_module(Rb, Ry, div_result);
-  SHR shr_module(Ry, shr_result, Rb);
-  SHL shl_module(Ry, shl_result, Rb);
+  alu_ror ror_module(Ry, Rb, ror_result);
+  alu_rol rol_module(Ry, Rb, rol_result);
+  alu_div div_module(Rb, Ry, div_quotient, div_remainder);
+  alu_shr shr_module(Ry, shr_result, Rb);
+  alu_shl shl_module(Ry, shl_result, Rb);
+  alu_shra shra_module(Ry, Rb, shra_result);
 
 
 
@@ -62,8 +64,16 @@ module alu(
 		end
 	 else if(DIV)
 		begin
-			resultLo = div_result[31:0];
-			resultHi = div_result[63:32];
+			resultLo = div_quotient;
+			resultHi = div_remainder;
+		end
+	 else if(ROR)
+		begin
+			resultLo = ror_result;
+		end
+	 else if(ROL)
+		begin
+			resultLo = rol_result;
 		end
 	 else if(SHR)
 		begin
@@ -72,6 +82,10 @@ module alu(
 	 else if(SHL)
 		begin
 			resultLo = shl_result;
+		end
+	 else if(SHRA)
+		begin
+			resultLo = shra_result;
 		end
     end
 

@@ -8,7 +8,7 @@ module mul_tb;
     reg Read;
     reg HIin, LOin, InPortout, Cout;
     reg Zin, PCin, IRin, Yin;
-	reg PCout, Zlowout, Zhighout, MDRout, R2out, R3out, LOout, HIout; // add any other signals to see in your simulation
+	reg PCout, Zlowout, Zhighout, MDRout, R2out, R3out, R4out, R5out, R7out, LOout, HIout; // add any other signals to see in your simulation
 	reg IncPC, MUL;
 	reg [31:0] Mdatain;
 	
@@ -30,8 +30,8 @@ parameter Default = 4'b0000,
 reg [3:0] Present_state = Default;
 
 
-datapath DUT(.PCout(PCout), .Zlowout(Zlowout), .Zhighout(Zhighout), .MDRout(MDRout), .R2out(R2out), .R3out(R3out), .MARin(MARin), .Zin(Zin), .PCin(PCin), .Cout(Cout), .InPortout(InPortout),
-              .MDRin(MDRin), .IRin(IRin), .Yin(Yin), .IncPC(IncPC), .LOout(LOout), .HIout(HIout), .LOin(LOin), .HIin(HIin), .Read(Read), .MUL(MUL), .R1in(R1in), .R2in(R2in), .R3in(R3in), .clk(clk), .MDatain(Mdatain));
+datapath DUT(.PCout(PCout), .Zlowout(Zlowout), .Zhighout(Zhighout), .MDRout(MDRout), .R2out(R2out), .R3out(R3out), .R4out(R4out), .R5out(R5out), .R7out(R7out), .MARin(MARin), .Zin(Zin), .PCin(PCin), .Cout(Cout), .InPortout(InPortout),
+              .MDRin(MDRin), .IRin(IRin), .Yin(Yin), .IncPC(IncPC), .LOout(LOout), .HIout(HIout), .LOin(LOin), .HIin(HIin), .Read(Read), .MUL(MUL), .R1in(R1in), .R2in(R2in), .R3in(R3in), .R4in(R4in), .R5in(R5in), .clk(clk), .MDatain(Mdatain));
 
 
 // add test logic here
@@ -78,7 +78,7 @@ always @(Present_state) // do the required job in each state
 			Default: 
 				begin
 					PCout <= 0; Zlowout <= 0; Zhighout <= 0; MDRout <= 0; // initialize the signals
-					R2out <= 0; R3out <= 0; MARin <= 0; Zin <= 0;
+					R2out <= 0; R3out <= 0; R4out <= 0; R5out <= 0; R7out <= 0; MARin <= 0; Zin <= 0;
 					PCin <=0; MDRin <= 0; IRin <= 0; Yin <= 0;
 					IncPC <= 0; Read <= 0; MUL <= 0;
 					HIout <= 0; LOout <= 0;
@@ -88,30 +88,30 @@ always @(Present_state) // do the required job in each state
 				end
 			Reg_load1a: 
 				begin
-					Mdatain <= 4;
+					Mdatain <= -4;
 					Read = 0; MDRin = 0; // the first zero is there for completeness
 					#0 Read <= 1; MDRin <= 1; // and the first 10ns might not be needed depending on your
 					#10 Read <= 0; MDRin <= 0; // implementation; same goes for the other states
 				end
 			Reg_load1b: 
 				begin
-					#0 MDRout <= 1; R2in <= 1;
-					#10 MDRout <= 0; R2in <= 0; // initialize R2 with the value $12
+					#0 MDRout <= 1; R4in <= 1;
+					#10 MDRout <= 0; R4in <= 0; // initialize R2 with the value $12
 				end
 			Reg_load2a: 
 				begin
-					Mdatain <= 5;
+					Mdatain <= -5;
 					#0 Read <= 1; MDRin <= 1;
 					#15 Read <= 0; MDRin <= 0;
 				end
 			Reg_load2b:
 				begin
-					#0 MDRout <= 1; R3in <= 1;
-					#10 MDRout <= 0; R3in <= 0; // initialize R3 with the value $14
+					#0 MDRout <= 1; R5in <= 1;
+					#10 MDRout <= 0; R5in <= 0; // initialize R3 with the value $14
 				end
 			Reg_load3a: 
 				begin
-					Mdatain <= 32'h00000018;
+					Mdatain <= 0;
 					#0 Read <= 1; MDRin <= 1;
 					#10 Read <= 0; MDRin <= 0;
 				end
@@ -137,13 +137,13 @@ always @(Present_state) // do the required job in each state
 				end
 			T3: 
 				begin
-					#0 R2out <= 1; Yin <= 1;
-					#10 R2out <= 0; Yin <= 0;
+					#0 R4out <= 1; Yin <= 1;
+					#10 R4out <= 0; Yin <= 0;
 				end
 			T4: 
 				begin
-					#0 R3out <= 1; MUL <= 1; Zin <= 1;
-					#10 R3out <= 0; MUL <= 0; Zin <= 0;
+					#0 R5out <= 1; MUL <= 1; Zin <= 1;
+					#10 R5out <= 0; MUL <= 0; Zin <= 0;
 				end
 			T5: 
 				begin

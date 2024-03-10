@@ -1,4 +1,4 @@
-// SHL datapath_tb.v file: <This is the filename>
+// and datapath_tb.v file: <This is the filename>
 `timescale 1ns/10ps
 module shl_tb;
     reg clk;
@@ -8,7 +8,7 @@ module shl_tb;
     reg Read;
     reg HIin, LOin, InPortout, Cout;
     reg Zin, PCin, IRin, Yin;
-	reg PCout, Zlowout, Zhighout, MDRout, R2out, R3out, LOout, HIout; // add any other signals to see in your simulation
+	reg PCout, Zlowout, Zhighout, MDRout, R2out, R3out, R4out, R5out, R7out, LOout, HIout; // add any other signals to see in your simulation
 	reg IncPC, SHL;
 	reg [31:0] Mdatain;
 	
@@ -29,7 +29,7 @@ parameter Default = 4'b0000,
 reg [3:0] Present_state = Default;
 
 
-datapath DUT(.PCout(PCout), .Zlowout(Zlowout), .Zhighout(Zhighout), .MDRout(MDRout), .R2out(R2out), .R3out(R3out), .MARin(MARin), .Zin(Zin), .PCin(PCin), .Cout(Cout), .InPortout(InPortout),
+datapath DUT(.PCout(PCout), .Zlowout(Zlowout), .Zhighout(Zhighout), .MDRout(MDRout), .R2out(R2out), .R3out(R3out), .R4out(R4out), .R5out(R5out), .R7out(R7out), .MARin(MARin), .Zin(Zin), .PCin(PCin), .Cout(Cout), .InPortout(InPortout),
               .MDRin(MDRin), .IRin(IRin), .Yin(Yin), .IncPC(IncPC), .LOout(LOout), .HIout(HIout), .Read(Read), .SHL(SHL), .R1in(R1in), .R2in(R2in), .R3in(R3in), .clk(clk), .MDatain(Mdatain));
 
 
@@ -75,7 +75,7 @@ always @(Present_state) // do the required job in each state
 			Default: 
 				begin
 					PCout <= 0; Zlowout <= 0; Zhighout <= 0; MDRout <= 0; // initialize the signals
-					R2out <= 0; R3out <= 0; MARin <= 0; Zin <= 0;
+					R2out <= 0; R3out <= 0; R4out <=0; R5out <=0; R7out<=0; MARin <= 0; Zin <= 0;
 					PCin <=0; MDRin <= 0; IRin <= 0; Yin <= 0;
 					IncPC <= 0; Read <= 0; SHL <= 0;
 					HIout <= 0; LOout <= 0;
@@ -84,7 +84,7 @@ always @(Present_state) // do the required job in each state
 				end
 			Reg_load1a: 
 				begin
-					Mdatain <= 32'h00000003;
+					Mdatain <= 32'b11011011;
 					Read = 0; MDRin = 0; // the first zero is there for completeness
 					#0 Read <= 1; MDRin <= 1; // and the first 10ns might not be needed depending on your
 					#10 Read <= 0; MDRin <= 0; // implementation; same goes for the other states
@@ -96,7 +96,7 @@ always @(Present_state) // do the required job in each state
 				end
 			Reg_load2a: 
 				begin
-					Mdatain <= 32'h00000002;
+					Mdatain <= 2;
 					#0 Read <= 1; MDRin <= 1;
 					#15 Read <= 0; MDRin <= 0;
 				end
@@ -107,7 +107,7 @@ always @(Present_state) // do the required job in each state
 				end
 			Reg_load3a: 
 				begin
-					Mdatain <= 32'h00000018;
+					Mdatain <= 0;
 					#0 Read <= 1; MDRin <= 1;
 					#10 Read <= 0; MDRin <= 0;
 				end
@@ -138,8 +138,8 @@ always @(Present_state) // do the required job in each state
 				end
 			T4: 
 				begin
-					#0 SHL <= 1; Zin <= 1;
-					#10 SHL <= 0; Zin <= 0;
+					#0 R3out <= 1; SHL <= 1; Zin <= 1;
+					#10 R3out <= 0; SHL <= 0; Zin <= 0;
 				end
 			T5: 
 				begin

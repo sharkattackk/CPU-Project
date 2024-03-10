@@ -9,7 +9,7 @@ module add_tb;
     reg Read;
     reg HIin, LOin, InPortout, Cout;
     reg Zin, PCin, IRin, Yin;
-	reg PCout, Zlowout, Zhighout, MDRout, R2out, R3out, LOout, HIout; // add any other signals to see in your simulation
+	reg PCout, Zlowout, Zhighout, MDRout, R2out, R3out, R7out, LOout, HIout; // add any other signals to see in your simulation
 	reg IncPC, ADD;
 	reg [31:0] Mdatain;
 	
@@ -31,7 +31,7 @@ reg [3:0] Present_state = Default;
 
 
 datapath DUT(.PCout(PCout), .Zlowout(Zlowout), .Zhighout(Zhighout), .MDRout(MDRout), .R2out(R2out), .R3out(R3out), .MARin(MARin), .Zin(Zin), .PCin(PCin), .Cout(Cout), .InPortout(InPortout),
-              .MDRin(MDRin), .IRin(IRin), .Yin(Yin), .IncPC(IncPC), .LOout(LOout), .HIout(HIout), .Read(Read), .ADD(ADD), .R1in(R1in), .R2in(R2in), .R3in(R3in), .clk(clk), .MDatain(Mdatain));
+              .MDRin(MDRin), .IRin(IRin), .Yin(Yin), .IncPC(IncPC), .LOout(LOout), .HIout(HIout), .Read(Read), .ADD(ADD), .R1in(R1in), .R7out(R7out), .R2in(R2in), .R3in(R3in), .clk(clk), .MDatain(Mdatain));
 
 
 // add test logic here
@@ -76,16 +76,16 @@ always @(Present_state) // do the required job in each state
 			Default: 
 				begin
 					PCout <= 0; Zlowout <= 0; Zhighout <= 0; MDRout <= 0; // initialize the signals
-					R2out <= 0; R3out <= 0; MARin <= 0; Zin <= 0;
+					R2out <= 0; R3out <= 0; R7out <=0; MARin <= 0; Zin <= 0;
 					PCin <=0; MDRin <= 0; IRin <= 0; Yin <= 0;
 					IncPC <= 0; Read <= 0; ADD <= 0;
 					HIout <= 0; LOout <= 0;
-					Cout <= 0; InPortout <=0; 
+					Cout <= 0; InPortout <= 0; 
 					R1in <= 0; R2in <= 0; R3in <= 0; Mdatain <= 32'h00000000;
 				end
 			Reg_load1a: 
 				begin
-					Mdatain <= 32'h00000012;
+					Mdatain <= 5;
 					Read = 0; MDRin = 0; // the first zero is there for completeness
 					#0 Read <= 1; MDRin <= 1; // and the first 10ns might not be needed depending on your
 					#10 Read <= 0; MDRin <= 0; // implementation; same goes for the other states
@@ -97,7 +97,7 @@ always @(Present_state) // do the required job in each state
 				end
 			Reg_load2a: 
 				begin
-					Mdatain <= 32'h00000014;
+					Mdatain <= -10;
 					#0 Read <= 1; MDRin <= 1;
 					#15 Read <= 0; MDRin <= 0;
 				end
@@ -108,7 +108,7 @@ always @(Present_state) // do the required job in each state
 				end
 			Reg_load3a: 
 				begin
-					Mdatain <= 32'h00000018;
+					Mdatain <= 0;
 					#0 Read <= 1; MDRin <= 1;
 					#10 Read <= 0; MDRin <= 0;
 				end
