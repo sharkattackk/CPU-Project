@@ -1,6 +1,11 @@
 Assembler report for CPU
+<<<<<<< HEAD
 Sun Mar 03 21:20:48 2024
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
+=======
+Mon Mar 04 13:52:33 2024
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+>>>>>>> main
 
 
 ---------------------
@@ -10,7 +15,11 @@ Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
+<<<<<<< HEAD
   5. Assembler Device Options: C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/output_files/CPU.sof
+=======
+  5. Assembler Device Options: C:/Users/19cmb13/CPU-Project/output_files/CPU.sof
+>>>>>>> main
   6. Assembler Messages
 
 
@@ -38,7 +47,11 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
+<<<<<<< HEAD
 ; Assembler Status      ; Successful - Sun Mar 03 21:20:48 2024 ;
+=======
+; Assembler Status      ; Successful - Mon Mar 04 13:52:33 2024 ;
+>>>>>>> main
 ; Revision Name         ; CPU                                   ;
 ; Top-level Entity Name ; datapath                              ;
 ; Family                ; Cyclone V                             ;
@@ -53,6 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
+<<<<<<< HEAD
 +--------------------------------------------------------------------------+
 ; Assembler Generated Files                                                ;
 +--------------------------------------------------------------------------+
@@ -70,6 +84,25 @@ https://fpgasoftware.intel.com/eula.
 ; JTAG usercode  ; 0x00EC22D3                                                                        ;
 ; Checksum       ; 0x00EC22D3                                                                        ;
 +----------------+-----------------------------------------------------------------------------------+
+=======
++---------------------------------------------------+
+; Assembler Generated Files                         ;
++---------------------------------------------------+
+; File Name                                         ;
++---------------------------------------------------+
+; C:/Users/19cmb13/CPU-Project/output_files/CPU.sof ;
++---------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/19cmb13/CPU-Project/output_files/CPU.sof ;
++----------------+------------------------------------------------------------+
+; Option         ; Setting                                                    ;
++----------------+------------------------------------------------------------+
+; JTAG usercode  ; 0x00EC220E                                                 ;
+; Checksum       ; 0x00EC220E                                                 ;
++----------------+------------------------------------------------------------+
+>>>>>>> main
 
 
 +--------------------+
@@ -77,6 +110,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
+<<<<<<< HEAD
     Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
     Info: Processing started: Sun Mar 03 21:20:37 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off CPU -c CPU
@@ -87,5 +121,17 @@ Info: Quartus Prime Assembler was successful. 0 errors, 2 warnings
     Info: Processing ended: Sun Mar 03 21:20:48 2024
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:06
+=======
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Processing started: Mon Mar 04 13:52:25 2024
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off CPU -c CPU
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4835 megabytes
+    Info: Processing ended: Mon Mar 04 13:52:33 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:07
+>>>>>>> main
 
 

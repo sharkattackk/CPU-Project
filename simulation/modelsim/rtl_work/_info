@@ -7,6 +7,7 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
+<<<<<<< HEAD
 Z0 dC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/simulation/modelsim
 valu
 Z1 !s110 1709536095
@@ -18,21 +19,44 @@ R0
 w1709535600
 8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v
 FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v
+=======
+Z0 dC:/Users/19cmb13/CPU-Project/simulation/modelsim
+valu
+Z1 !s110 1709579471
+!i10b 1
+!s100 h6Z:1TbDm3?WP?TM[jHee1
+IMCfB@W;K;l5:=R0k?a9g11
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1709579432
+8C:/Users/19cmb13/CPU-Project/alu.v
+FC:/Users/19cmb13/CPU-Project/alu.v
+>>>>>>> main
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
+<<<<<<< HEAD
 Z4 !s108 1709536095.000000
 !s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu.v|
 !i113 1
 Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project
+=======
+Z4 !s108 1709579471.000000
+!s107 C:/Users/19cmb13/CPU-Project/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/alu.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/19cmb13/CPU-Project
+>>>>>>> main
 Z7 tCvgOpt 0
-valu_and
+valu_add
 R1
 !i10b 1
+<<<<<<< HEAD
 !s100 BmN^Di2hPZa>^<_HlPdn_1
 IVOVV`T=VQD87B9>JOU:ZA3
 R2
@@ -40,18 +64,33 @@ R0
 Z8 w1709491704
 8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_and.v
 FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_and.v
+=======
+!s100 jgK>W6lhVBT5_Mb2aX4_f0
+I^9=Ij9d8lX>ZE`10>YF=Z0
+R2
+R0
+w1709572848
+8C:/Users/19cmb13/CPU-Project/alu_add.v
+FC:/Users/19cmb13/CPU-Project/alu_add.v
+>>>>>>> main
 L0 1
 R3
 r1
 !s85 0
 31
 R4
+<<<<<<< HEAD
 !s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_and.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_and.v|
+=======
+!s107 C:/Users/19cmb13/CPU-Project/alu_add.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/alu_add.v|
+>>>>>>> main
 !i113 1
 R5
 R6
 R7
+<<<<<<< HEAD
 valu_div
 Z9 !s110 1709536097
 !i10b 1
@@ -62,19 +101,60 @@ R0
 w1709536062
 8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_div.v
 FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_div.v
+=======
+valu_and
+R1
+!i10b 1
+!s100 BmN^Di2hPZa>^<_HlPdn_1
+In>LfUIj4T1DcZH@K<L]Fz3
+R2
+R0
+Z8 w1709570270
+8C:/Users/19cmb13/CPU-Project/alu_and.v
+FC:/Users/19cmb13/CPU-Project/alu_and.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/19cmb13/CPU-Project/alu_and.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/alu_and.v|
+!i113 1
+R5
+R6
+R7
+valu_div
+Z9 !s110 1709579470
+!i10b 1
+!s100 CTCZXnVm7n4WMKg]k8>872
+I^48?LnRAnWVGJ5I9iSB=k1
+R2
+R0
+w1709576171
+8C:/Users/19cmb13/CPU-Project/alu_div.v
+FC:/Users/19cmb13/CPU-Project/alu_div.v
+>>>>>>> main
 L0 3
 R3
 r1
 !s85 0
 31
+<<<<<<< HEAD
 Z10 !s108 1709536097.000000
 !s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_div.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_div.v|
+=======
+Z10 !s108 1709579470.000000
+!s107 C:/Users/19cmb13/CPU-Project/alu_div.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/alu_div.v|
+>>>>>>> main
 !i113 1
 R5
 R6
 R7
 valu_mul
+<<<<<<< HEAD
 Z11 !s110 1709536096
 !i10b 1
 !s100 DOc4kfmf45gaLl:>XzddY2
@@ -84,19 +164,37 @@ R0
 w1709532001
 8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_mul.v
 FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_mul.v
+=======
+R1
+!i10b 1
+!s100 3i]k>CWbE;S]>ZoZ9];4]0
+I9F9C@j6;Qg3ik8>ngaBYz2
+R2
+R0
+w1709573572
+8C:/Users/19cmb13/CPU-Project/alu_mul.v
+FC:/Users/19cmb13/CPU-Project/alu_mul.v
+>>>>>>> main
 L0 1
 R3
 r1
 !s85 0
 31
+<<<<<<< HEAD
 Z12 !s108 1709536096.000000
 !s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_mul.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_mul.v|
+=======
+R4
+!s107 C:/Users/19cmb13/CPU-Project/alu_mul.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/alu_mul.v|
+>>>>>>> main
 !i113 1
 R5
 R6
 R7
 valu_neg
+<<<<<<< HEAD
 R1
 !i10b 1
 !s100 <QnkZ_Ej2Bn0iOm`mQZSK1
@@ -172,14 +270,75 @@ R0
 w1709532825
 8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_rol.v
 FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_rol.v
+=======
+R9
+!i10b 1
+!s100 <QnkZ_Ej2Bn0iOm`mQZSK1
+I_Y?j<IjISb<Q[jCQBBEUQ0
+R2
+R0
+R8
+8C:/Users/19cmb13/CPU-Project/alu_neg.v
+FC:/Users/19cmb13/CPU-Project/alu_neg.v
+>>>>>>> main
 L0 1
 R3
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R12
 !s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_rol.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_rol.v|
+=======
+R10
+!s107 C:/Users/19cmb13/CPU-Project/alu_neg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/alu_neg.v|
+!i113 1
+R5
+R6
+R7
+valu_not
+R9
+!i10b 1
+!s100 XG0:M^jTozo6Y^nBQNEWU3
+IJEbYnAXA[Hc`38VTfEUZh2
+R2
+R0
+R8
+8C:/Users/19cmb13/CPU-Project/alu_not.v
+FC:/Users/19cmb13/CPU-Project/alu_not.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/19cmb13/CPU-Project/alu_not.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/alu_not.v|
+!i113 1
+R5
+R6
+R7
+valu_or
+R9
+!i10b 1
+!s100 ;0aT@XM4OBgbjM7o]2<Ta3
+I8FP;a]4TKPBlFYZEG`IRf3
+R2
+R0
+R8
+8C:/Users/19cmb13/CPU-Project/alu_or.v
+FC:/Users/19cmb13/CPU-Project/alu_or.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/19cmb13/CPU-Project/alu_or.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/alu_or.v|
+>>>>>>> main
 !i113 1
 R5
 R6
@@ -188,25 +347,62 @@ valu_ror
 R9
 !i10b 1
 !s100 YDLOoR;3mW?en0DnXFX7N0
+<<<<<<< HEAD
 IVl4f_<SPORMoM7IN?RHCl3
 R2
 R0
 w1709533627
 8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_ror.v
 FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_ror.v
+=======
+IIQH]<mR<z:@<X]KY=lVhc3
+R2
+R0
+w1709575289
+8C:/Users/19cmb13/CPU-Project/alu_ror.v
+FC:/Users/19cmb13/CPU-Project/alu_ror.v
+>>>>>>> main
 L0 1
 R3
 r1
 !s85 0
 31
 R10
+<<<<<<< HEAD
 !s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_ror.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/alu_ror.v|
+=======
+!s107 C:/Users/19cmb13/CPU-Project/alu_ror.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/alu_ror.v|
+!i113 1
+R5
+R6
+R7
+valu_sub
+R1
+!i10b 1
+!s100 eQKX`ImQeTnZ5Ig=IV:M02
+IQ3JA?bF0lf^5_h1K7W<GE0
+R2
+R0
+w1709571948
+8C:/Users/19cmb13/CPU-Project/alu_sub.v
+FC:/Users/19cmb13/CPU-Project/alu_sub.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/19cmb13/CPU-Project/alu_sub.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/alu_sub.v|
+>>>>>>> main
 !i113 1
 R5
 R6
 R7
 vdatapath
+<<<<<<< HEAD
 R11
 !i10b 1
 !s100 =IgWH`DI6je<f@RH]j6L73
@@ -216,18 +412,36 @@ R0
 w1709535472
 8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v
 FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v
+=======
+R1
+!i10b 1
+!s100 @IBTo]gWBV<T^k6:4zn=k1
+I_ozCK^:N:Ao?UgOa93[<01
+R2
+R0
+w1709577031
+8C:/Users/19cmb13/CPU-Project/datapath.v
+FC:/Users/19cmb13/CPU-Project/datapath.v
+>>>>>>> main
 L0 1
 R3
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R12
 !s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/datapath.v|
+=======
+R4
+!s107 C:/Users/19cmb13/CPU-Project/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/datapath.v|
+>>>>>>> main
 !i113 1
 R5
 R6
 R7
+<<<<<<< HEAD
 vdiv_tb
 R9
 !i10b 1
@@ -239,17 +453,37 @@ w1709535514
 8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/div_tb.v
 FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/div_tb.v
 L0 3
+=======
+vFullAdder
+R1
+!i10b 1
+!s100 gznakoUM@oZ17?ZS1U=Od0
+IWWeU;J?7E=VSJZi6Z<]F=1
+R2
+R0
+w1709571869
+8C:/Users/19cmb13/CPU-Project/fullAdder.v
+FC:/Users/19cmb13/CPU-Project/fullAdder.v
+L0 1
+>>>>>>> main
 R3
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R10
 !s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/div_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/div_tb.v|
+=======
+R4
+!s107 C:/Users/19cmb13/CPU-Project/fullAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/fullAdder.v|
+>>>>>>> main
 !i113 1
 R5
 R6
 R7
+<<<<<<< HEAD
 vMDRreg
 R11
 !i10b 1
@@ -260,19 +494,39 @@ R0
 R8
 8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/MDR.v
 FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/MDR.v
+=======
+n@full@adder
+vMDRreg
+R1
+!i10b 1
+!s100 3kH3aXPGJ_1WhkRzWM1R`3
+IDIOSB`4UU51R^?ezKah>]0
+R2
+R0
+R8
+8C:/Users/19cmb13/CPU-Project/MDR.v
+FC:/Users/19cmb13/CPU-Project/MDR.v
+>>>>>>> main
 L0 1
 R3
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R12
 !s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/MDR.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/MDR.v|
+=======
+R4
+!s107 C:/Users/19cmb13/CPU-Project/MDR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/MDR.v|
+>>>>>>> main
 !i113 1
 R5
 R6
 R7
 n@m@d@rreg
+<<<<<<< HEAD
 vReg32
 R11
 !i10b 1
@@ -283,19 +537,60 @@ R0
 w1709492389
 8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v
 FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v
+=======
+vmul_tb
+R1
+!i10b 1
+!s100 AWn]0XLcWD>o2Xgl6D38?1
+IWLWPJ]d>ncbYW5Yf@jl]L3
+R2
+R0
+w1709578947
+8C:/Users/19cmb13/CPU-Project/mul_tb.v
+FC:/Users/19cmb13/CPU-Project/mul_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/19cmb13/CPU-Project/mul_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/mul_tb.v|
+!i113 1
+R5
+R6
+R7
+vReg32
+R1
+!i10b 1
+!s100 304hgWCeI9KF02Q7h1hNm2
+I3421z:E2WEbb_`0o1LUWo2
+R2
+R0
+R8
+8C:/Users/19cmb13/CPU-Project/Reg32.v
+FC:/Users/19cmb13/CPU-Project/Reg32.v
+>>>>>>> main
 L0 1
 R3
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R12
 !s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/Reg32.v|
+=======
+R4
+!s107 C:/Users/19cmb13/CPU-Project/Reg32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/Reg32.v|
+>>>>>>> main
 !i113 1
 R5
 R6
 R7
 n@reg32
+<<<<<<< HEAD
 vThirtyTwoToFiveEncoder
 R11
 !i10b 1
@@ -306,20 +601,85 @@ R0
 R8
 8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToFiveEncoder.v
 FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToFiveEncoder.v
+=======
+vSHL
+R9
+!i10b 1
+!s100 c4:>ZK7EaDdO8RW7hhVB;3
+I=l8BNKfEO=`BCij3?U0i>2
+R2
+R0
+w1709576766
+8C:/Users/19cmb13/CPU-Project/SHL.v
+FC:/Users/19cmb13/CPU-Project/SHL.v
+L0 3
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/19cmb13/CPU-Project/SHL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/SHL.v|
+!i113 1
+R5
+R6
+R7
+n@s@h@l
+vSHR
+R9
+!i10b 1
+!s100 1zjIA`:b]_IUB@JG`hX991
+I;dLmM=HaQ`TC]2NU1e=Xh1
+R2
+R0
+w1709576753
+8C:/Users/19cmb13/CPU-Project/SHR.v
+FC:/Users/19cmb13/CPU-Project/SHR.v
+L0 3
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/19cmb13/CPU-Project/SHR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/SHR.v|
+!i113 1
+R5
+R6
+R7
+n@s@h@r
+vThirtyTwoToFiveEncoder
+R1
+!i10b 1
+!s100 497@BoAeA9Fz0iD1Nz?PU2
+IZRQaH<YIa8zmU?BZ2Yf?V2
+R2
+R0
+R8
+8C:/Users/19cmb13/CPU-Project/ThirtyTwoToFiveEncoder.v
+FC:/Users/19cmb13/CPU-Project/ThirtyTwoToFiveEncoder.v
+>>>>>>> main
 L0 4
 R3
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R12
 !s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToFiveEncoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToFiveEncoder.v|
+=======
+R4
+!s107 C:/Users/19cmb13/CPU-Project/ThirtyTwoToFiveEncoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/ThirtyTwoToFiveEncoder.v|
+>>>>>>> main
 !i113 1
 R5
 R6
 R7
 n@thirty@two@to@five@encoder
 vThirtyTwoToOneEncoder
+<<<<<<< HEAD
 R11
 !i10b 1
 !s100 cTee3Z^:F5SEmDEz9Q1?I3
@@ -329,14 +689,31 @@ R0
 R8
 8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToOneEncoder.v
 FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToOneEncoder.v
+=======
+R1
+!i10b 1
+!s100 cTee3Z^:F5SEmDEz9Q1?I3
+I:zVK`NmdA<I_k`g63MLzS3
+R2
+R0
+R8
+8C:/Users/19cmb13/CPU-Project/ThirtyTwoToOneEncoder.v
+FC:/Users/19cmb13/CPU-Project/ThirtyTwoToOneEncoder.v
+>>>>>>> main
 L0 4
 R3
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R12
 !s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToOneEncoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/ThirtyTwoToOneEncoder.v|
+=======
+R4
+!s107 C:/Users/19cmb13/CPU-Project/ThirtyTwoToOneEncoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/ThirtyTwoToOneEncoder.v|
+>>>>>>> main
 !i113 1
 R5
 R6
@@ -346,20 +723,34 @@ vTwoToOneMux
 R1
 !i10b 1
 !s100 iLPiPE>Nhi2KGSWMIzPZD2
+<<<<<<< HEAD
 IkhJTM:EE8000HF5Cz;i@f2
 R2
 R0
 R8
 8C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/TwoToOneMux.v
 FC:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/TwoToOneMux.v
+=======
+IIhRPz6O:_nhLD9TYBAYWY1
+R2
+R0
+R8
+8C:/Users/19cmb13/CPU-Project/TwoToOneMux.v
+FC:/Users/19cmb13/CPU-Project/TwoToOneMux.v
+>>>>>>> main
 L0 2
 R3
 r1
 !s85 0
 31
 R4
+<<<<<<< HEAD
 !s107 C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/TwoToOneMux.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project|C:/intelFPGA_lite/18.1/elec374CPUPhase1/CPU-Project/TwoToOneMux.v|
+=======
+!s107 C:/Users/19cmb13/CPU-Project/TwoToOneMux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19cmb13/CPU-Project|C:/Users/19cmb13/CPU-Project/TwoToOneMux.v|
+>>>>>>> main
 !i113 1
 R5
 R6

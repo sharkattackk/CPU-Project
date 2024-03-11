@@ -1,0 +1,23 @@
+module alu_add(Sum, cOut, A, B);
+	input [31:0] A, B;
+	output [31:0] Sum;
+	output cOut;
+
+	// assign Sum = A + B;
+	// assign cOut = 33'b0;
+
+	// RCAdder32 adderAB(.Sum(Sum), .cOut(cOut), .A(A), .B(B), .cIn(1'b0));
+
+	
+	wire [32:0] carry; // Internal carry wires
+	assign carry[0] = 1'b0;
+	// Instantiate 32 full adders
+	genvar i;
+	generate
+	  for (i = 0; i < 32; i = i + 1) begin : gen_loop
+			FullAdder FullAdder0(Sum[i], carry[i + 1], A[i], B[i], carry[i]);
+
+	  end
+	endgenerate
+
+endmodule

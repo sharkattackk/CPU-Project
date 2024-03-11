@@ -1,7 +1,11 @@
 module alu_mul(
     input [31:0] x,
     input [31:0] y,
+<<<<<<< HEAD
     output [63:0] product
+=======
+    output reg [63:0] product
+>>>>>>> main
 );
 
     reg [2:0] cc [15:0]; // Coefficients derived from 'y'
@@ -43,8 +47,16 @@ module alu_mul(
 			begin
             prod = prod + spp[kk];
 			end
+<<<<<<< HEAD
     end
 	 	  // Output the final product
 		  assign product = prod;
+=======
+		// Output the final product
+		  product <= prod;
+    end
+	 	  // Output the final product
+		  //assign product = prod;
+>>>>>>> main
 
 endmodule

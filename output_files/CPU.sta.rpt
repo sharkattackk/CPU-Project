@@ -1,6 +1,11 @@
 Timing Analyzer report for CPU
+<<<<<<< HEAD
 Sun Mar 03 21:20:57 2024
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
+=======
+Mon Mar 04 13:52:38 2024
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+>>>>>>> main
 
 
 ---------------------
@@ -72,6 +77,7 @@ https://fpgasoftware.intel.com/eula.
 
 
 
+<<<<<<< HEAD
 +-----------------------------------------------------------------------------+
 ; Timing Analyzer Summary                                                     ;
 +-----------------------+-----------------------------------------------------+
@@ -84,6 +90,20 @@ https://fpgasoftware.intel.com/eula.
 ; Delay Model           ; Combined                                            ;
 ; Rise/Fall Delays      ; Enabled                                             ;
 +-----------------------+-----------------------------------------------------+
+=======
++---------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                         ;
++-----------------------+---------------------------------------------------------+
+; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                                  ;
+; Revision Name         ; CPU                                                     ;
+; Device Family         ; Cyclone V                                               ;
+; Device Name           ; 5CGXFC7C7F23C8                                          ;
+; Timing Models         ; Final                                                   ;
+; Delay Model           ; Combined                                                ;
+; Rise/Fall Delays      ; Enabled                                                 ;
++-----------------------+---------------------------------------------------------+
+>>>>>>> main
 
 
 +------------------------------------------+
@@ -330,6 +350,7 @@ No synchronizer chains to report.
 ; IRin        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Yin         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Zin         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ZHIin       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; MARin       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; MDRin       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; MDRout      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -345,6 +366,16 @@ No synchronizer chains to report.
 ; OR          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; NEG         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; NOT         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+<<<<<<< HEAD
+=======
+; SUB         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ADD         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; MUL         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ROR         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; DIV         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SHL         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SHR         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+>>>>>>> main
 ; InPortout   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Cout        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; MDatain[0]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -449,8 +480,13 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
+<<<<<<< HEAD
     Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
     Info: Processing started: Sun Mar 03 21:20:49 2024
+=======
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Processing started: Mon Mar 04 13:52:34 2024
+>>>>>>> main
 Info: Command: quartus_sta CPU -c CPU
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -509,10 +545,17 @@ Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
+<<<<<<< HEAD
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 5143 megabytes
     Info: Processing ended: Sun Mar 03 21:20:57 2024
     Info: Elapsed time: 00:00:08
+=======
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 5143 megabytes
+    Info: Processing ended: Mon Mar 04 13:52:38 2024
+    Info: Elapsed time: 00:00:04
+>>>>>>> main
     Info: Total CPU time (on all processors): 00:00:04
 
 

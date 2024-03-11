@@ -84,7 +84,11 @@ always @(Present_state) // do the required job in each state
 				end
 			Reg_load1a: 
 				begin
+<<<<<<< HEAD
 					Mdatain <= 32'h00000012;
+=======
+					Mdatain <= 32'b11011101;
+>>>>>>> main
 					Read = 0; MDRin = 0; // the first zero is there for completeness
 					#0 Read <= 1; MDRin <= 1; // and the first 10ns might not be needed depending on your
 					#10 Read <= 0; MDRin <= 0; // implementation; same goes for the other states
@@ -96,7 +100,11 @@ always @(Present_state) // do the required job in each state
 				end
 			Reg_load2a: 
 				begin
+<<<<<<< HEAD
 					Mdatain <= 32'h00000014;
+=======
+					Mdatain <= 4;
+>>>>>>> main
 					#0 Read <= 1; MDRin <= 1;
 					#15 Read <= 0; MDRin <= 0;
 				end

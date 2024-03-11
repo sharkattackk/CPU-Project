@@ -36,6 +36,10 @@ PCout => PCout.IN1
 IRin => IRin.IN1
 Yin => Yin.IN1
 Zin => Zin.IN1
+<<<<<<< HEAD
+=======
+ZHIin => ZHIin.IN1
+>>>>>>> main
 MARin => ~NO_FANOUT~
 MDRin => MDRin.IN1
 MDRout => MDRout.IN1
@@ -51,10 +55,20 @@ AND => AND.IN1
 OR => OR.IN1
 NEG => NEG.IN1
 NOT => NOT.IN1
+<<<<<<< HEAD
 MUL => MUL.IN1
 DIV => DIV.IN1
 ROL => ROL.IN1
 ROR => ROR.IN1
+=======
+SUB => SUB.IN1
+ADD => ADD.IN1
+MUL => MUL.IN1
+ROR => ROR.IN1
+DIV => DIV.IN1
+SHL => SHL.IN1
+SHR => SHR.IN1
+>>>>>>> main
 InPortout => InPortout.IN1
 Cout => Cout.IN1
 MDatain[0] => MDatain[0].IN1
@@ -5235,6 +5249,7 @@ select[4] => Mux31.IN32
 
 
 |datapath|alu:alu_module
+<<<<<<< HEAD
 Rb[0] => Rb[0].IN8
 Rb[1] => Rb[1].IN8
 Rb[2] => Rb[2].IN8
@@ -5300,6 +5315,72 @@ Ry[29] => Ry[29].IN8
 Ry[30] => Ry[30].IN8
 Ry[31] => Ry[31].IN8
 clk => ~NO_FANOUT~
+=======
+Rb[0] => Rb[0].IN11
+Rb[1] => Rb[1].IN11
+Rb[2] => Rb[2].IN11
+Rb[3] => Rb[3].IN11
+Rb[4] => Rb[4].IN11
+Rb[5] => Rb[5].IN11
+Rb[6] => Rb[6].IN11
+Rb[7] => Rb[7].IN11
+Rb[8] => Rb[8].IN11
+Rb[9] => Rb[9].IN11
+Rb[10] => Rb[10].IN11
+Rb[11] => Rb[11].IN11
+Rb[12] => Rb[12].IN11
+Rb[13] => Rb[13].IN11
+Rb[14] => Rb[14].IN11
+Rb[15] => Rb[15].IN11
+Rb[16] => Rb[16].IN11
+Rb[17] => Rb[17].IN11
+Rb[18] => Rb[18].IN11
+Rb[19] => Rb[19].IN11
+Rb[20] => Rb[20].IN11
+Rb[21] => Rb[21].IN11
+Rb[22] => Rb[22].IN11
+Rb[23] => Rb[23].IN11
+Rb[24] => Rb[24].IN11
+Rb[25] => Rb[25].IN11
+Rb[26] => Rb[26].IN11
+Rb[27] => Rb[27].IN11
+Rb[28] => Rb[28].IN11
+Rb[29] => Rb[29].IN11
+Rb[30] => Rb[30].IN11
+Rb[31] => Rb[31].IN11
+Ry[0] => Ry[0].IN11
+Ry[1] => Ry[1].IN11
+Ry[2] => Ry[2].IN11
+Ry[3] => Ry[3].IN11
+Ry[4] => Ry[4].IN11
+Ry[5] => Ry[5].IN11
+Ry[6] => Ry[6].IN11
+Ry[7] => Ry[7].IN11
+Ry[8] => Ry[8].IN11
+Ry[9] => Ry[9].IN11
+Ry[10] => Ry[10].IN11
+Ry[11] => Ry[11].IN11
+Ry[12] => Ry[12].IN11
+Ry[13] => Ry[13].IN11
+Ry[14] => Ry[14].IN11
+Ry[15] => Ry[15].IN11
+Ry[16] => Ry[16].IN11
+Ry[17] => Ry[17].IN11
+Ry[18] => Ry[18].IN11
+Ry[19] => Ry[19].IN11
+Ry[20] => Ry[20].IN11
+Ry[21] => Ry[21].IN11
+Ry[22] => Ry[22].IN11
+Ry[23] => Ry[23].IN11
+Ry[24] => Ry[24].IN11
+Ry[25] => Ry[25].IN11
+Ry[26] => Ry[26].IN11
+Ry[27] => Ry[27].IN11
+Ry[28] => Ry[28].IN11
+Ry[29] => Ry[29].IN11
+Ry[30] => Ry[30].IN11
+Ry[31] => Ry[31].IN11
+>>>>>>> main
 AND => resultLo[0].OUTPUTSELECT
 AND => resultLo[1].OUTPUTSELECT
 AND => resultLo[2].OUTPUTSELECT
@@ -5436,6 +5517,77 @@ NOT => resultLo[30].OUTPUTSELECT
 NOT => resultLo[31].OUTPUTSELECT
 NOT => resultLo[31].IN1
 NOT => resultHi[31].IN1
+<<<<<<< HEAD
+=======
+SUB => resultLo[0].OUTPUTSELECT
+SUB => resultLo[1].OUTPUTSELECT
+SUB => resultLo[2].OUTPUTSELECT
+SUB => resultLo[3].OUTPUTSELECT
+SUB => resultLo[4].OUTPUTSELECT
+SUB => resultLo[5].OUTPUTSELECT
+SUB => resultLo[6].OUTPUTSELECT
+SUB => resultLo[7].OUTPUTSELECT
+SUB => resultLo[8].OUTPUTSELECT
+SUB => resultLo[9].OUTPUTSELECT
+SUB => resultLo[10].OUTPUTSELECT
+SUB => resultLo[11].OUTPUTSELECT
+SUB => resultLo[12].OUTPUTSELECT
+SUB => resultLo[13].OUTPUTSELECT
+SUB => resultLo[14].OUTPUTSELECT
+SUB => resultLo[15].OUTPUTSELECT
+SUB => resultLo[16].OUTPUTSELECT
+SUB => resultLo[17].OUTPUTSELECT
+SUB => resultLo[18].OUTPUTSELECT
+SUB => resultLo[19].OUTPUTSELECT
+SUB => resultLo[20].OUTPUTSELECT
+SUB => resultLo[21].OUTPUTSELECT
+SUB => resultLo[22].OUTPUTSELECT
+SUB => resultLo[23].OUTPUTSELECT
+SUB => resultLo[24].OUTPUTSELECT
+SUB => resultLo[25].OUTPUTSELECT
+SUB => resultLo[26].OUTPUTSELECT
+SUB => resultLo[27].OUTPUTSELECT
+SUB => resultLo[28].OUTPUTSELECT
+SUB => resultLo[29].OUTPUTSELECT
+SUB => resultLo[30].OUTPUTSELECT
+SUB => resultLo[31].OUTPUTSELECT
+SUB => resultLo[31].IN1
+SUB => resultHi[31].IN1
+ADD => resultLo[0].OUTPUTSELECT
+ADD => resultLo[1].OUTPUTSELECT
+ADD => resultLo[2].OUTPUTSELECT
+ADD => resultLo[3].OUTPUTSELECT
+ADD => resultLo[4].OUTPUTSELECT
+ADD => resultLo[5].OUTPUTSELECT
+ADD => resultLo[6].OUTPUTSELECT
+ADD => resultLo[7].OUTPUTSELECT
+ADD => resultLo[8].OUTPUTSELECT
+ADD => resultLo[9].OUTPUTSELECT
+ADD => resultLo[10].OUTPUTSELECT
+ADD => resultLo[11].OUTPUTSELECT
+ADD => resultLo[12].OUTPUTSELECT
+ADD => resultLo[13].OUTPUTSELECT
+ADD => resultLo[14].OUTPUTSELECT
+ADD => resultLo[15].OUTPUTSELECT
+ADD => resultLo[16].OUTPUTSELECT
+ADD => resultLo[17].OUTPUTSELECT
+ADD => resultLo[18].OUTPUTSELECT
+ADD => resultLo[19].OUTPUTSELECT
+ADD => resultLo[20].OUTPUTSELECT
+ADD => resultLo[21].OUTPUTSELECT
+ADD => resultLo[22].OUTPUTSELECT
+ADD => resultLo[23].OUTPUTSELECT
+ADD => resultLo[24].OUTPUTSELECT
+ADD => resultLo[25].OUTPUTSELECT
+ADD => resultLo[26].OUTPUTSELECT
+ADD => resultLo[27].OUTPUTSELECT
+ADD => resultLo[28].OUTPUTSELECT
+ADD => resultLo[29].OUTPUTSELECT
+ADD => resultLo[30].OUTPUTSELECT
+ADD => resultLo[31].OUTPUTSELECT
+ADD => resultLo[31].IN1
+ADD => resultHi[31].IN1
+>>>>>>> main
 MUL => resultHi[0].OUTPUTSELECT
 MUL => resultHi[1].OUTPUTSELECT
 MUL => resultHi[2].OUTPUTSELECT
@@ -5468,7 +5620,11 @@ MUL => resultHi[28].OUTPUTSELECT
 MUL => resultHi[29].OUTPUTSELECT
 MUL => resultHi[30].OUTPUTSELECT
 MUL => resultHi[31].OUTPUTSELECT
+<<<<<<< HEAD
 MUL => resultHi[31].IN0
+=======
+MUL => resultHi[31].IN1
+>>>>>>> main
 MUL => resultLo[0].OUTPUTSELECT
 MUL => resultLo[1].OUTPUTSELECT
 MUL => resultLo[2].OUTPUTSELECT
@@ -5502,6 +5658,7 @@ MUL => resultLo[29].OUTPUTSELECT
 MUL => resultLo[30].OUTPUTSELECT
 MUL => resultLo[31].OUTPUTSELECT
 MUL => resultLo[31].IN1
+<<<<<<< HEAD
 ROL => resultLo[0].OUTPUTSELECT
 ROL => resultLo[1].OUTPUTSELECT
 ROL => resultLo[2].OUTPUTSELECT
@@ -5536,6 +5693,42 @@ ROL => resultLo[30].OUTPUTSELECT
 ROL => resultLo[31].OUTPUTSELECT
 ROL => resultLo[31].IN0
 ROR => resultLo[31].IN1
+=======
+ROR => resultLo[0].OUTPUTSELECT
+ROR => resultLo[1].OUTPUTSELECT
+ROR => resultLo[2].OUTPUTSELECT
+ROR => resultLo[3].OUTPUTSELECT
+ROR => resultLo[4].OUTPUTSELECT
+ROR => resultLo[5].OUTPUTSELECT
+ROR => resultLo[6].OUTPUTSELECT
+ROR => resultLo[7].OUTPUTSELECT
+ROR => resultLo[8].OUTPUTSELECT
+ROR => resultLo[9].OUTPUTSELECT
+ROR => resultLo[10].OUTPUTSELECT
+ROR => resultLo[11].OUTPUTSELECT
+ROR => resultLo[12].OUTPUTSELECT
+ROR => resultLo[13].OUTPUTSELECT
+ROR => resultLo[14].OUTPUTSELECT
+ROR => resultLo[15].OUTPUTSELECT
+ROR => resultLo[16].OUTPUTSELECT
+ROR => resultLo[17].OUTPUTSELECT
+ROR => resultLo[18].OUTPUTSELECT
+ROR => resultLo[19].OUTPUTSELECT
+ROR => resultLo[20].OUTPUTSELECT
+ROR => resultLo[21].OUTPUTSELECT
+ROR => resultLo[22].OUTPUTSELECT
+ROR => resultLo[23].OUTPUTSELECT
+ROR => resultLo[24].OUTPUTSELECT
+ROR => resultLo[25].OUTPUTSELECT
+ROR => resultLo[26].OUTPUTSELECT
+ROR => resultLo[27].OUTPUTSELECT
+ROR => resultLo[28].OUTPUTSELECT
+ROR => resultLo[29].OUTPUTSELECT
+ROR => resultLo[30].OUTPUTSELECT
+ROR => resultLo[31].OUTPUTSELECT
+ROR => resultLo[31].IN1
+ROR => resultHi[31].IN0
+>>>>>>> main
 DIV => resultHi[31].IN1
 DIV => resultLo[0].OUTPUTSELECT
 DIV => resultLo[1].OUTPUTSELECT
@@ -5570,6 +5763,7 @@ DIV => resultLo[29].OUTPUTSELECT
 DIV => resultLo[30].OUTPUTSELECT
 DIV => resultLo[31].OUTPUTSELECT
 DIV => resultLo[31].IN1
+<<<<<<< HEAD
 resultLo[0] <= mul_result[32].DB_MAX_OUTPUT_PORT_TYPE
 resultLo[1] <= mul_result[33].DB_MAX_OUTPUT_PORT_TYPE
 resultLo[2] <= mul_result[34].DB_MAX_OUTPUT_PORT_TYPE
@@ -5634,6 +5828,106 @@ resultHi[28] <= mul_result[28].DB_MAX_OUTPUT_PORT_TYPE
 resultHi[29] <= mul_result[29].DB_MAX_OUTPUT_PORT_TYPE
 resultHi[30] <= mul_result[30].DB_MAX_OUTPUT_PORT_TYPE
 resultHi[31] <= mul_result[31].DB_MAX_OUTPUT_PORT_TYPE
+=======
+SHR => resultLo[0].OUTPUTSELECT
+SHR => resultLo[1].OUTPUTSELECT
+SHR => resultLo[2].OUTPUTSELECT
+SHR => resultLo[3].OUTPUTSELECT
+SHR => resultLo[4].OUTPUTSELECT
+SHR => resultLo[5].OUTPUTSELECT
+SHR => resultLo[6].OUTPUTSELECT
+SHR => resultLo[7].OUTPUTSELECT
+SHR => resultLo[8].OUTPUTSELECT
+SHR => resultLo[9].OUTPUTSELECT
+SHR => resultLo[10].OUTPUTSELECT
+SHR => resultLo[11].OUTPUTSELECT
+SHR => resultLo[12].OUTPUTSELECT
+SHR => resultLo[13].OUTPUTSELECT
+SHR => resultLo[14].OUTPUTSELECT
+SHR => resultLo[15].OUTPUTSELECT
+SHR => resultLo[16].OUTPUTSELECT
+SHR => resultLo[17].OUTPUTSELECT
+SHR => resultLo[18].OUTPUTSELECT
+SHR => resultLo[19].OUTPUTSELECT
+SHR => resultLo[20].OUTPUTSELECT
+SHR => resultLo[21].OUTPUTSELECT
+SHR => resultLo[22].OUTPUTSELECT
+SHR => resultLo[23].OUTPUTSELECT
+SHR => resultLo[24].OUTPUTSELECT
+SHR => resultLo[25].OUTPUTSELECT
+SHR => resultLo[26].OUTPUTSELECT
+SHR => resultLo[27].OUTPUTSELECT
+SHR => resultLo[28].OUTPUTSELECT
+SHR => resultLo[29].OUTPUTSELECT
+SHR => resultLo[30].OUTPUTSELECT
+SHR => resultLo[31].OUTPUTSELECT
+SHR => resultLo[31].IN0
+SHL => resultLo[31].IN1
+resultLo[0] <= resultLo[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[1] <= resultLo[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[2] <= resultLo[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[3] <= resultLo[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[4] <= resultLo[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[5] <= resultLo[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[6] <= resultLo[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[7] <= resultLo[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[8] <= resultLo[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[9] <= resultLo[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[10] <= resultLo[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[11] <= resultLo[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[12] <= resultLo[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[13] <= resultLo[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[14] <= resultLo[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[15] <= resultLo[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[16] <= resultLo[16]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[17] <= resultLo[17]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[18] <= resultLo[18]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[19] <= resultLo[19]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[20] <= resultLo[20]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[21] <= resultLo[21]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[22] <= resultLo[22]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[23] <= resultLo[23]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[24] <= resultLo[24]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[25] <= resultLo[25]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[26] <= resultLo[26]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[27] <= resultLo[27]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[28] <= resultLo[28]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[29] <= resultLo[29]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[30] <= resultLo[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultLo[31] <= resultLo[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[0] <= resultHi[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[1] <= resultHi[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[2] <= resultHi[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[3] <= resultHi[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[4] <= resultHi[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[5] <= resultHi[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[6] <= resultHi[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[7] <= resultHi[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[8] <= resultHi[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[9] <= resultHi[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[10] <= resultHi[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[11] <= resultHi[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[12] <= resultHi[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[13] <= resultHi[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[14] <= resultHi[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[15] <= resultHi[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[16] <= resultHi[16]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[17] <= resultHi[17]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[18] <= resultHi[18]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[19] <= resultHi[19]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[20] <= resultHi[20]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[21] <= resultHi[21]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[22] <= resultHi[22]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[23] <= resultHi[23]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[24] <= resultHi[24]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[25] <= resultHi[25]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[26] <= resultHi[26]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[27] <= resultHi[27]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[28] <= resultHi[28]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[29] <= resultHi[29]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[30] <= resultHi[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultHi[31] <= resultHi[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> main
 
 
 |datapath|alu:alu_module|alu_and:and_module
@@ -6032,6 +6326,1105 @@ result[30] <= a[30].DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= a[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
+=======
+|datapath|alu:alu_module|alu_sub:sub_module
+Sum[0] <= FullAdder:gen_loop[0].FullAdder0.Sum
+Sum[1] <= FullAdder:gen_loop[1].FullAdder0.Sum
+Sum[2] <= FullAdder:gen_loop[2].FullAdder0.Sum
+Sum[3] <= FullAdder:gen_loop[3].FullAdder0.Sum
+Sum[4] <= FullAdder:gen_loop[4].FullAdder0.Sum
+Sum[5] <= FullAdder:gen_loop[5].FullAdder0.Sum
+Sum[6] <= FullAdder:gen_loop[6].FullAdder0.Sum
+Sum[7] <= FullAdder:gen_loop[7].FullAdder0.Sum
+Sum[8] <= FullAdder:gen_loop[8].FullAdder0.Sum
+Sum[9] <= FullAdder:gen_loop[9].FullAdder0.Sum
+Sum[10] <= FullAdder:gen_loop[10].FullAdder0.Sum
+Sum[11] <= FullAdder:gen_loop[11].FullAdder0.Sum
+Sum[12] <= FullAdder:gen_loop[12].FullAdder0.Sum
+Sum[13] <= FullAdder:gen_loop[13].FullAdder0.Sum
+Sum[14] <= FullAdder:gen_loop[14].FullAdder0.Sum
+Sum[15] <= FullAdder:gen_loop[15].FullAdder0.Sum
+Sum[16] <= FullAdder:gen_loop[16].FullAdder0.Sum
+Sum[17] <= FullAdder:gen_loop[17].FullAdder0.Sum
+Sum[18] <= FullAdder:gen_loop[18].FullAdder0.Sum
+Sum[19] <= FullAdder:gen_loop[19].FullAdder0.Sum
+Sum[20] <= FullAdder:gen_loop[20].FullAdder0.Sum
+Sum[21] <= FullAdder:gen_loop[21].FullAdder0.Sum
+Sum[22] <= FullAdder:gen_loop[22].FullAdder0.Sum
+Sum[23] <= FullAdder:gen_loop[23].FullAdder0.Sum
+Sum[24] <= FullAdder:gen_loop[24].FullAdder0.Sum
+Sum[25] <= FullAdder:gen_loop[25].FullAdder0.Sum
+Sum[26] <= FullAdder:gen_loop[26].FullAdder0.Sum
+Sum[27] <= FullAdder:gen_loop[27].FullAdder0.Sum
+Sum[28] <= FullAdder:gen_loop[28].FullAdder0.Sum
+Sum[29] <= FullAdder:gen_loop[29].FullAdder0.Sum
+Sum[30] <= FullAdder:gen_loop[30].FullAdder0.Sum
+Sum[31] <= FullAdder:gen_loop[31].FullAdder0.Sum
+cOut <= <GND>
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+A[10] => A[10].IN1
+A[11] => A[11].IN1
+A[12] => A[12].IN1
+A[13] => A[13].IN1
+A[14] => A[14].IN1
+A[15] => A[15].IN1
+A[16] => A[16].IN1
+A[17] => A[17].IN1
+A[18] => A[18].IN1
+A[19] => A[19].IN1
+A[20] => A[20].IN1
+A[21] => A[21].IN1
+A[22] => A[22].IN1
+A[23] => A[23].IN1
+A[24] => A[24].IN1
+A[25] => A[25].IN1
+A[26] => A[26].IN1
+A[27] => A[27].IN1
+A[28] => A[28].IN1
+A[29] => A[29].IN1
+A[30] => A[30].IN1
+A[31] => A[31].IN1
+B[0] => Add0.IN64
+B[1] => Add0.IN63
+B[2] => Add0.IN62
+B[3] => Add0.IN61
+B[4] => Add0.IN60
+B[5] => Add0.IN59
+B[6] => Add0.IN58
+B[7] => Add0.IN57
+B[8] => Add0.IN56
+B[9] => Add0.IN55
+B[10] => Add0.IN54
+B[11] => Add0.IN53
+B[12] => Add0.IN52
+B[13] => Add0.IN51
+B[14] => Add0.IN50
+B[15] => Add0.IN49
+B[16] => Add0.IN48
+B[17] => Add0.IN47
+B[18] => Add0.IN46
+B[19] => Add0.IN45
+B[20] => Add0.IN44
+B[21] => Add0.IN43
+B[22] => Add0.IN42
+B[23] => Add0.IN41
+B[24] => Add0.IN40
+B[25] => Add0.IN39
+B[26] => Add0.IN38
+B[27] => Add0.IN37
+B[28] => Add0.IN36
+B[29] => Add0.IN35
+B[30] => Add0.IN34
+B[31] => Add0.IN33
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[0].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[1].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[2].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[3].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[4].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[5].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[6].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[7].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[8].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[9].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[10].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[11].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[12].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[13].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[14].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[15].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[16].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[17].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[18].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[19].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[20].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[21].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[22].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[23].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[24].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[25].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[26].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[27].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[28].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[29].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[30].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_sub:sub_module|FullAdder:gen_loop[31].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module
+Sum[0] <= FullAdder:gen_loop[0].FullAdder0.Sum
+Sum[1] <= FullAdder:gen_loop[1].FullAdder0.Sum
+Sum[2] <= FullAdder:gen_loop[2].FullAdder0.Sum
+Sum[3] <= FullAdder:gen_loop[3].FullAdder0.Sum
+Sum[4] <= FullAdder:gen_loop[4].FullAdder0.Sum
+Sum[5] <= FullAdder:gen_loop[5].FullAdder0.Sum
+Sum[6] <= FullAdder:gen_loop[6].FullAdder0.Sum
+Sum[7] <= FullAdder:gen_loop[7].FullAdder0.Sum
+Sum[8] <= FullAdder:gen_loop[8].FullAdder0.Sum
+Sum[9] <= FullAdder:gen_loop[9].FullAdder0.Sum
+Sum[10] <= FullAdder:gen_loop[10].FullAdder0.Sum
+Sum[11] <= FullAdder:gen_loop[11].FullAdder0.Sum
+Sum[12] <= FullAdder:gen_loop[12].FullAdder0.Sum
+Sum[13] <= FullAdder:gen_loop[13].FullAdder0.Sum
+Sum[14] <= FullAdder:gen_loop[14].FullAdder0.Sum
+Sum[15] <= FullAdder:gen_loop[15].FullAdder0.Sum
+Sum[16] <= FullAdder:gen_loop[16].FullAdder0.Sum
+Sum[17] <= FullAdder:gen_loop[17].FullAdder0.Sum
+Sum[18] <= FullAdder:gen_loop[18].FullAdder0.Sum
+Sum[19] <= FullAdder:gen_loop[19].FullAdder0.Sum
+Sum[20] <= FullAdder:gen_loop[20].FullAdder0.Sum
+Sum[21] <= FullAdder:gen_loop[21].FullAdder0.Sum
+Sum[22] <= FullAdder:gen_loop[22].FullAdder0.Sum
+Sum[23] <= FullAdder:gen_loop[23].FullAdder0.Sum
+Sum[24] <= FullAdder:gen_loop[24].FullAdder0.Sum
+Sum[25] <= FullAdder:gen_loop[25].FullAdder0.Sum
+Sum[26] <= FullAdder:gen_loop[26].FullAdder0.Sum
+Sum[27] <= FullAdder:gen_loop[27].FullAdder0.Sum
+Sum[28] <= FullAdder:gen_loop[28].FullAdder0.Sum
+Sum[29] <= FullAdder:gen_loop[29].FullAdder0.Sum
+Sum[30] <= FullAdder:gen_loop[30].FullAdder0.Sum
+Sum[31] <= FullAdder:gen_loop[31].FullAdder0.Sum
+cOut <= <GND>
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+A[10] => A[10].IN1
+A[11] => A[11].IN1
+A[12] => A[12].IN1
+A[13] => A[13].IN1
+A[14] => A[14].IN1
+A[15] => A[15].IN1
+A[16] => A[16].IN1
+A[17] => A[17].IN1
+A[18] => A[18].IN1
+A[19] => A[19].IN1
+A[20] => A[20].IN1
+A[21] => A[21].IN1
+A[22] => A[22].IN1
+A[23] => A[23].IN1
+A[24] => A[24].IN1
+A[25] => A[25].IN1
+A[26] => A[26].IN1
+A[27] => A[27].IN1
+A[28] => A[28].IN1
+A[29] => A[29].IN1
+A[30] => A[30].IN1
+A[31] => A[31].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+B[10] => B[10].IN1
+B[11] => B[11].IN1
+B[12] => B[12].IN1
+B[13] => B[13].IN1
+B[14] => B[14].IN1
+B[15] => B[15].IN1
+B[16] => B[16].IN1
+B[17] => B[17].IN1
+B[18] => B[18].IN1
+B[19] => B[19].IN1
+B[20] => B[20].IN1
+B[21] => B[21].IN1
+B[22] => B[22].IN1
+B[23] => B[23].IN1
+B[24] => B[24].IN1
+B[25] => B[25].IN1
+B[26] => B[26].IN1
+B[27] => B[27].IN1
+B[28] => B[28].IN1
+B[29] => B[29].IN1
+B[30] => B[30].IN1
+B[31] => B[31].IN1
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[0].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[1].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[2].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[3].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[4].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[5].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[6].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[7].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[8].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[9].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[10].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[11].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[12].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[13].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[14].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[15].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[16].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[17].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[18].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[19].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[20].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[21].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[22].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[23].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[24].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[25].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[26].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[27].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[28].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[29].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[30].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|alu:alu_module|alu_add:add_module|FullAdder:gen_loop[31].FullAdder0
+X => Sum.IN0
+X => Cout.IN0
+X => Cout.IN0
+Y => Sum.IN1
+Y => Cout.IN1
+Y => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+>>>>>>> main
 |datapath|alu:alu_module|alu_mul:mul_module
 x[0] => x[0].IN1
 x[1] => x[1].IN1
@@ -6262,6 +7655,7 @@ result[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |datapath|alu:alu_module|alu_rol:rol_module
 A[0] => R.DATAB
 A[0] => R.DATAA
@@ -7503,6 +8897,8 @@ R[30] <= R.DB_MAX_OUTPUT_PORT_TYPE
 R[31] <= R.DB_MAX_OUTPUT_PORT_TYPE
 
 
+=======
+>>>>>>> main
 |datapath|alu:alu_module|alu_ror:ror_module
 A[0] => R.DATAB
 A[0] => R.DATAA
@@ -10864,3 +12260,150 @@ quotient[62] <= A.DB_MAX_OUTPUT_PORT_TYPE
 quotient[63] <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
+=======
+|datapath|alu:alu_module|SHR:shr_module
+xIn[0] => ShiftRight0.IN32
+xIn[1] => ShiftRight0.IN31
+xIn[2] => ShiftRight0.IN30
+xIn[3] => ShiftRight0.IN29
+xIn[4] => ShiftRight0.IN28
+xIn[5] => ShiftRight0.IN27
+xIn[6] => ShiftRight0.IN26
+xIn[7] => ShiftRight0.IN25
+xIn[8] => ShiftRight0.IN24
+xIn[9] => ShiftRight0.IN23
+xIn[10] => ShiftRight0.IN22
+xIn[11] => ShiftRight0.IN21
+xIn[12] => ShiftRight0.IN20
+xIn[13] => ShiftRight0.IN19
+xIn[14] => ShiftRight0.IN18
+xIn[15] => ShiftRight0.IN17
+xIn[16] => ShiftRight0.IN16
+xIn[17] => ShiftRight0.IN15
+xIn[18] => ShiftRight0.IN14
+xIn[19] => ShiftRight0.IN13
+xIn[20] => ShiftRight0.IN12
+xIn[21] => ShiftRight0.IN11
+xIn[22] => ShiftRight0.IN10
+xIn[23] => ShiftRight0.IN9
+xIn[24] => ShiftRight0.IN8
+xIn[25] => ShiftRight0.IN7
+xIn[26] => ShiftRight0.IN6
+xIn[27] => ShiftRight0.IN5
+xIn[28] => ShiftRight0.IN4
+xIn[29] => ShiftRight0.IN3
+xIn[30] => ShiftRight0.IN2
+xIn[31] => ShiftRight0.IN1
+xOut[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[3] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[4] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[5] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[6] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[7] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[8] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[9] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[10] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[11] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[12] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[13] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[14] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[15] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[16] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[17] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[18] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[19] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[20] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[21] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[22] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[23] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[24] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[25] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[26] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[27] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[28] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[29] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[30] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[31] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+shift[0] => ShiftRight0.IN37
+shift[1] => ShiftRight0.IN36
+shift[2] => ShiftRight0.IN35
+shift[3] => ShiftRight0.IN34
+shift[4] => ShiftRight0.IN33
+
+
+|datapath|alu:alu_module|SHL:shl_module
+xIn[0] => ShiftLeft0.IN32
+xIn[1] => ShiftLeft0.IN31
+xIn[2] => ShiftLeft0.IN30
+xIn[3] => ShiftLeft0.IN29
+xIn[4] => ShiftLeft0.IN28
+xIn[5] => ShiftLeft0.IN27
+xIn[6] => ShiftLeft0.IN26
+xIn[7] => ShiftLeft0.IN25
+xIn[8] => ShiftLeft0.IN24
+xIn[9] => ShiftLeft0.IN23
+xIn[10] => ShiftLeft0.IN22
+xIn[11] => ShiftLeft0.IN21
+xIn[12] => ShiftLeft0.IN20
+xIn[13] => ShiftLeft0.IN19
+xIn[14] => ShiftLeft0.IN18
+xIn[15] => ShiftLeft0.IN17
+xIn[16] => ShiftLeft0.IN16
+xIn[17] => ShiftLeft0.IN15
+xIn[18] => ShiftLeft0.IN14
+xIn[19] => ShiftLeft0.IN13
+xIn[20] => ShiftLeft0.IN12
+xIn[21] => ShiftLeft0.IN11
+xIn[22] => ShiftLeft0.IN10
+xIn[23] => ShiftLeft0.IN9
+xIn[24] => ShiftLeft0.IN8
+xIn[25] => ShiftLeft0.IN7
+xIn[26] => ShiftLeft0.IN6
+xIn[27] => ShiftLeft0.IN5
+xIn[28] => ShiftLeft0.IN4
+xIn[29] => ShiftLeft0.IN3
+xIn[30] => ShiftLeft0.IN2
+xIn[31] => ShiftLeft0.IN1
+xOut[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[4] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[5] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[6] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[7] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[8] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[9] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[10] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[11] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[12] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[13] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[14] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[15] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[16] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[17] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[18] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[19] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[20] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[21] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[22] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[23] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[24] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[25] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[26] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[27] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[28] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[29] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[30] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+xOut[31] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+shift[0] => ShiftLeft0.IN37
+shift[1] => ShiftLeft0.IN36
+shift[2] => ShiftLeft0.IN35
+shift[3] => ShiftLeft0.IN34
+shift[4] => ShiftLeft0.IN33
+
+
+>>>>>>> main

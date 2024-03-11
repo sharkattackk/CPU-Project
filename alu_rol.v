@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module alu_rol(
 			input [31:0] A, B,
 			output [31:0] R		//output register
@@ -38,4 +39,16 @@ module alu_rol(
 												(M == 2) ? {A[29:0], A[31:30]} :
 												(M == 1) ? {A[30:0], A[31:31]} :
 												 A[31:0];
+=======
+`timescale 1ns / 1ps
+
+
+
+module alu_rol(
+	input wire [31:0] Ra,
+	input wire [31:0] Rb,
+	output wire [31:0] Rz
+	);
+   assign Rz = (Ra << Rb[3:0]) | (Ra >> 32-Rb[3:0]);
+>>>>>>> main
 endmodule

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module alu_ror(
 input [31:0] A, B,
 output [31:0] R		//output reg
@@ -40,4 +41,16 @@ output [31:0] R		//output reg
 												(M == 2) ? {A[1:0], A[31:2]} :
 												(M == 1) ? {A[0:0], A[31:1]} :
 												 A[31:0];
+=======
+`timescale 1ns / 1ps
+
+
+
+module alu_ror(
+	input wire [31:0] Ra,
+	input wire [31:0] Rb,
+	output wire [31:0] Rz
+	);
+	assign Rz =  (Ra >> Rb[3:0])|(Ra << 32-Rb[3:0]);
+>>>>>>> main
 endmodule
