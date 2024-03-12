@@ -18,17 +18,19 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
                     enable[2] = R2in;
                     enable[3] = R3in;
                     enable[1] = R1in;
-						  Rout[7] = R7out;
-						  Rout[5] = R5out;
-						  Rout[4] = R4out;
+                    Rout[7] = R7out;
+                    Rout[5] = R5out;
+                    Rout[4] = R4out;
                     Rout[3] = R3out;
                     Rout[2] = R2out;
                 end
 
                 wire [31:0] BusMuxIn_IR, BusMuxIn_Y, C_sign_extend, BusMuxIn_InPort, BusMuxIn_MDR, BusMuxIn_PC, BusMuxIn_ZLO, BusMuxIn_ZHI, BusMuxIn_LO, BusMuxIn_HI;
-                wire [31:0] BusMuxIn_R15, BusMuxIn_R14, BusMuxIn_R13, BusMuxIn_R12, BusMuxIn_R11, BusMuxIn_R10, BusMuxIn_R9, BusMuxIn_R8, BusMuxIn_R7, BusMuxIn_R6, BusMuxIn_R5, BusMuxIn_R4, BusMuxIn_R3, BusMuxIn_R2, BusMuxIn_R1, BusMuxIn_R0;					 wire [31:0] bus_signal;
+                wire [31:0] BusMuxIn_R15, BusMuxIn_R14, BusMuxIn_R13, BusMuxIn_R12, BusMuxIn_R11, BusMuxIn_R10, BusMuxIn_R9, BusMuxIn_R8, BusMuxIn_R7; 
+                wire [31:0] BusMuxIn_R6, BusMuxIn_R5, BusMuxIn_R4, BusMuxIn_R3, BusMuxIn_R2, BusMuxIn_R1, BusMuxIn_R0;					 
+                wire [31:0] bus_signal;
                 wire [31:0] C_data_out;
-					 wire [31:0] C_data_out_hi;
+				wire [31:0] C_data_out_hi;
                 wire [31:0] BusMuxOut;
 
 

@@ -1,7 +1,4 @@
 `timescale 1ns / 1ps
-
-
-
 module alu_ror(
 	input wire [31:0] Ra,
 	input wire [31:0] Rb,
