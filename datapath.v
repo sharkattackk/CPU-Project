@@ -99,20 +99,20 @@ module datapath( input R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9i
                     .Rb(BusMuxOut),
                     .Ry(BusMuxIn_Y),
                     .AND(AND),
-						  .OR(OR),
+                    .OR(OR),
                     .NOT(NOT),
                     .NEG(NEG),
-						  .SUB(SUB),
-						  .ADD(ADD),
-						  .MUL(MUL),
-						  .ROR(ROR),
-						  .ROL(ROL),
-						  .DIV(DIV),
-						  .SHL(SHL),
-						  .SHR(SHR),
-						  .SHRA(SHRA),
+                    .SUB(SUB),
+                    .ADD(ADD),
+                    .MUL(MUL),
+                    .ROR(ROR),
+                    .ROL(ROL),
+                    .DIV(DIV),
+                    .SHL(SHL),
+                    .SHR(SHR),
+                    .SHRA(SHRA),
                     .resultLo(C_data_out),
-						  .resultHi(C_data_out_hi)
+                    .resultHi(C_data_out_hi)
                 );
 
 
