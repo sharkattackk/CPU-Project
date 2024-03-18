@@ -47,88 +47,66 @@ module alu(
 
 
 
-  always @(*) begin
-    if(AND)
-        begin
-          resultLo = and_result;
-        end
-	 else if(OR)
-			begin
-				resultLo = or_result;
-			end
-    else if(NEG)
-        begin
-            resultLo = neg_result;
-        end
-    else if(NOT)
-        begin  
-            resultLo = not_result;
-        end
-<<<<<<< HEAD
-	 else if(MUL)
-        begin  
-            resultLo <= mul_result[31:0];
-				resultHi <= mul_result[63:32];
-        end
-	else if(DIV)
-        begin  
-            resultLo <= div_result[31:0];
-				resultHi <= div_result[63:32];
-        end
-	else if(ROL)
-        begin  
-            resultLo = rol_result;
-        end
-	else if(ROR)
-        begin  
-            resultLo = ror_result;
-        end
-=======
-	 else if(SUB)
-        begin  
-            resultLo = sub_result;
-        end
-	 else if(ADD)
-        begin  
-            resultLo = add_result;
-        end
-	 else if(MUL)
-		begin
-			resultLo = mul_result[31:0];
-			resultHi = mul_result[63:32];
-		end
-	 else if(ROR)
-		begin
-			resultLo = ror_result;
-		end
-	 else if(DIV)
-		begin
-			resultLo = div_quotient;
-			resultHi = div_remainder;
-		end
-	 else if(ROR)
-		begin
-			resultLo = ror_result;
-		end
-	 else if(ROL)
-		begin
-			resultLo = rol_result;
-		end
-	 else if(SHR)
-		begin
-			resultLo = shr_result;
-		end
-	 else if(SHL)
-		begin
-			resultLo = shl_result;
-		end
-	 else if(SHRA)
-		begin
-			resultLo = shra_result;
-		end
->>>>>>> main
+  always @(*) 
+    begin
+        if(AND)
+            begin
+            resultLo = and_result;
+            end
+        else if(OR)
+                begin
+                    resultLo = or_result;
+                end
+        else if(NEG)
+            begin
+                resultLo = neg_result;
+            end
+        else if(NOT)
+            begin  
+                resultLo = not_result;
+            end
+        else if(SUB)
+            begin  
+                resultLo = sub_result;
+            end
+        else if(ADD)
+            begin  
+                resultLo = add_result;
+            end
+        else if(MUL)
+            begin
+                resultLo = mul_result[31:0];
+                resultHi = mul_result[63:32];
+            end
+        else if(ROR)
+            begin
+                resultLo = ror_result;
+            end
+        else if(DIV)
+            begin
+                resultLo = div_quotient;
+                resultHi = div_remainder;
+            end
+        else if(ROR)
+            begin
+                resultLo = ror_result;
+            end
+        else if(ROL)
+            begin
+                resultLo = rol_result;
+            end
+        else if(SHR)
+            begin
+                resultLo = shr_result;
+            end
+        else if(SHL)
+            begin
+                resultLo = shl_result;
+            end
+        else if(SHRA)
+            begin
+                resultLo = shra_result;
+            end
     end
 
-
-    
 endmodule 

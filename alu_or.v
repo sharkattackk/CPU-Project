@@ -4,5 +4,4 @@ module alu_or(
     output [31:0] result
 );
     assign result = a | b;
-
 endmodule
