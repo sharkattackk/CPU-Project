@@ -29,7 +29,7 @@ module select_encode(
 
     // C covers from IR[18:0] (19 bits total) and you want to sign extend the 19th bit aka [18] from 31 to 19
     // there are 13 bits between 31:19 so u want to exted 13 bits with the same signature as [18]
-    assign C_sign_extended = {13{IR[18]}, IR[18:0]};
+    assign C_sign_extended = {{13{IR[18]}}, IR[18:0]};
 
 endmodule
 

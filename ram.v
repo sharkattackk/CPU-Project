@@ -7,10 +7,14 @@ module ram(
 );
     reg [31:0] RAM[511:0];
 
+    initial begin: initialize
+        $readmemh("/Initialize.hex",, RAM);
+    end
+
     always @(*) begin
         if (we) begin
             RAM[address] <= data_in;
-        end else if (re)begin
+        end else if (re) begin
             data_out <= RAM[address];
         end
     end

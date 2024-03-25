@@ -1,0 +1,121 @@
+// MUL datapath_tb.v file: <This is the filename>
+`timescale 1ns/10ps
+module ld_tb;
+    reg clk;
+    reg clr;
+    reg Rin;
+    reg MDRin, MARin;
+    reg Read;
+    reg InPortout, Cout;
+    reg Zin, PCin, IRin, Yin;
+	reg PCout, Zlowout, MDRout; // add any other signals to see in your simulation
+	reg IncPC, ADD, Gra, Grb, BAout;
+	reg [31:0] Mdatain;
+	
+parameter Default = 4'b0000, 
+			 T0 = 4'b0001, 
+			 T1 = 4'b0010, 
+			 T2 = 4'b0011,
+			 T3 = 4'b0100, 
+			 T4 = 4'b0101, 
+			 T5 = 4'b0110, 
+			 T6 = 4'b0111,
+			 T7 = 4'b1000, 
+
+
+reg [3:0] Present_state = Default;
+
+
+datapath DUT(
+    .PCout(PCout), .Zlowout(Zlowout), .MDRout(MDRout), 
+    .MARin(MARin), .Zin(Zin), .PCin(PCin), .Cout(Cout), 
+    .InPortout(InPortout), .MDRin(MDRin), .IRin(IRin), 
+    .Yin(Yin), .IncPC(IncPC), .Read(Read), .ADD(ADD), 
+    .Gra(Gra), .Grb(Grb), .BAout(BAout) .clk(clk), .MDatain(Mdatain), .Rin(Rin)
+    );
+
+
+// add test logic here
+initial
+	begin
+		clk = 0;
+	forever #10 clk = ~ clk;
+end
+always @(posedge clk) // finite state machine; if clk rising-edge
+	begin
+		case (Present_state)
+			Default: 
+				Present_state = T0;
+			T0: 
+				Present_state = T1;
+			T1: 
+				Present_state = T2;
+			T2: 
+				Present_state = T3;
+			T3:
+				Present_state = T4;
+			T4:
+				Present_state = T5;
+			T5:
+				Present_state = T6;
+            T6:
+				Present_state = T7;
+            T7:
+				Present_state = T8;
+		endcase
+	end
+
+always @(Present_state) // do the required job in each state
+	begin
+		case (Present_state) // assert the required signals in each clk cycle
+			Default: 
+				begin
+					PCout <= 0; Zlowout <= 0; MDRout <= 0; // initialize the signals
+					MARin <= 0; Zin <= 0; Rin <= 0;
+					PCin <=0; MDRin <= 0; IRin <= 0; Yin <= 0;
+					IncPC <= 0; Read <= 0; ADD <= 0; Gra <= 0;
+                    Grb <= 0; Cout <= 0; InPortout <=0; BAout <= 0;
+				end
+			T0: 
+				begin // see if you need to de-assert these signals
+					#0 PCout <= 1; MARin <= 1; IncPC <= 1; Zin <= 1;
+					#10 PCout <= 0; MARin <= 0; IncPC <= 0; Zin <= 0;
+				end
+			T1: 
+				begin
+					#0 Zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1; // Mdatain[31:0] takes in value from RAM
+					#10 Zlowout <= 0; PCin <= 0; Read <= 0; MDRin <= 0;
+				end
+			T2: 
+				begin
+					#0 MDRout <= 1; IRin <= 1;
+					#10 MDRout <= 0; IRin <= 0;
+				end
+			T3: 
+				begin
+					#0 Grb <= 1; BAout <= 1; Yin <= 1;
+					#10 Grb <= 0; BAout <= 1; Yin <= 0;
+				end
+			T4: 
+				begin
+					#0 Cout <= 1; ADD <= 1; Zin <= 1;
+					#10 Cout <= 0; ADD <= 0; Zin <= 0;
+				end
+			T5: 
+				begin
+					#0 Zlowout <= 1; MARin <= 1;
+					#10 Zlowout <= 0; MARin <= 0;
+				end
+			T6: 
+				begin
+					#0 Read <= 1; MDRin <= 1;
+					#10 Read <= 0; MDRin <= 0;
+				end
+            T7: 
+				begin
+					#0 MDRout <= 1; Gra <= 1; Rin <= 1;
+					#10 MDRout <= 0; Gra <= 0; Rin <= 0;
+				end
+		endcase
+	end
+endmodule
