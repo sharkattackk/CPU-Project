@@ -1,7 +1,6 @@
 module inputOutputPort(input outputPortIn, clr, clk, inputPortOut,
                        input[31:0] bus,
-                       output[31:0] busInPort,
-                       output[7:0] sevevSegOut);
+                       output[31:0] busInPort);
 
 
 wire[31:0] OutPort;
